@@ -1,0 +1,46 @@
+name: Sync store products
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/sync-products.yml"
+      - "sync/trigger.txt"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download product data and photos
+        run: |
+          set -e
+          mkdir -p products/source
+          page=1
+          echo "[]" > products/all.json
+          while true; do
+            curl -sfL "https://everydaycart.online/wp-json/wc/store/v1/products?per_page=100&page=${page}" -o /tmp/p.json || break
+            n=$(jq length /tmp/p.json)
+            [ "$n" -eq 0 ] && break
+            jq -s '.[0] + .[1]' products/all.json /tmp/p.json > /tmp/m.json && mv /tmp/m.json products/all.json
+            page=$((page+1))
+          done
+          jq '[.[] | {id, name, slug, permalink, is_in_stock, prices: {price: .prices.price, regular: .prices.regular_price, minor: .prices.currency_minor_unit}, categories: [.categories[].name], short_description, images: [.images[].src]}]' products/all.json > products/products.json
+          jq -r '.[] | select(.is_in_stock) | .slug as $s | .images | to_entries[] | select(.key < 3) | "\($s)\t\(.key)\t\(.value)"' products/products.json | while IFS=$'\t' read -r slug idx url; do
+            ext="${url##*.}"; ext="${ext%%\?*}"
+            curl -sfL "$url" -o "products/source/${slug}-${idx}.${ext}" || echo "failed $url"
+          done
+          rm products/all.json
+          ls products/source | head -100
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add products
+          git diff --cached --quiet || git commit -m "Sync product data and photos from store"
+          git push
