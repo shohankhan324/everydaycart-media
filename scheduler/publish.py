@@ -247,6 +247,7 @@ def check():
 
 
 def main():
+    code = 0
     try:
         if MODE == "dry-run":
             run(dry=True)
@@ -256,11 +257,17 @@ def main():
             check()
         else:
             run()
+    except Exception as e:                       # keep the reason visible in last_run.log
+        log(f"FATAL {type(e).__name__}: {e}")
+        code = 1
     finally:
+        stamp = now_utc().isoformat(timespec="seconds")
+        (ROOT / "scheduler" / "last_run.log").write_text(f"{stamp} mode={MODE}\n" + "\n".join(SUMMARY) + "\n", encoding="utf-8")
         out = os.environ.get("GITHUB_STEP_SUMMARY")
         if out:
             with open(out, "a", encoding="utf-8") as fh:
                 fh.write("### Everyday Cart publisher\n\n" + "\n".join(f"- {l}" for l in SUMMARY) + "\n")
+    return code
 
 
 if __name__ == "__main__":
