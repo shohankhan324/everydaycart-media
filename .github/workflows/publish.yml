@@ -1,0 +1,48 @@
+name: Publish scheduled posts
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "run, check or dry-run"
+        type: choice
+        options: [run, check, dry-run]
+        default: run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install requests
+        run: pip install --quiet requests==2.32.3
+
+      - name: Publish due posts
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          FB_PAGE_ID: "1155560334313168"
+          PAGES_BASE: "https://shohankhan324.github.io/everydaycart-media"
+          MODE: ${{ inputs.mode || 'run' }}
+        run: python3 scheduler/publish.py
+
+      - name: Save publish state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add scheduler/state.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Update publish state [skip ci]"
+            for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          fi
