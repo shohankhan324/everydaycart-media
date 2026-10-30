@@ -65,5 +65,21 @@
       "at": "2026-10-30T05:27:12+00:00",
       "error": null
     }
+  },
+  "2026-10-30-baby-care-essentials": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141603847382754",
+      "url": "https://www.facebook.com/1155560334313168_122141603847382754",
+      "at": "2026-10-30T06:30:16+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18134678467740272",
+      "url": "https://www.instagram.com/p/DfG8TVqjlpe/",
+      "at": "2026-10-30T06:30:24+00:00",
+      "error": null
+    }
   }
 }
