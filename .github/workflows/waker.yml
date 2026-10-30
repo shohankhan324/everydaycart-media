@@ -1,0 +1,39 @@
+name: Wait for next post
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: waker
+  cancel-in-progress: true
+
+jobs:
+  wait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install requests
+        run: pip install --quiet requests==2.32.3
+
+      - name: Sleep until the next post is due, then publish it
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          s=$(MODE=next python3 scheduler/publish.py)
+          echo "Seconds until next post: $s"
+          if [ "$s" -lt 0 ]; then echo "Queue empty, timer stops."; exit 0; fi
+          if [ "$s" -gt 19800 ]; then
+            sleep 19800
+            gh workflow run waker.yml --ref main
+          else
+            sleep "$s"
+            gh workflow run publish.yml --ref main -f mode=run
+          fi

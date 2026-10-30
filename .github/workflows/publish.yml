@@ -1,6 +1,9 @@
 name: Publish scheduled posts
 
 on:
+  push:
+    branches: [main]
+    paths: ["scheduler/queue.json"]
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
@@ -13,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: publisher
@@ -24,6 +28,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Install requests
         run: pip install --quiet requests==2.32.3
@@ -47,3 +53,9 @@ jobs:
             git commit -q -m "Update publish state [skip ci]"
             for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
           fi
+
+      - name: Start the timer for the next post
+        if: always() && (inputs.mode || 'run') == 'run'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run waker.yml --ref main

@@ -26,7 +26,13 @@ _m = re.search(r"EAA[A-Za-z0-9]+", RAW_TOKEN)        # tolerate pasted quotes, c
 TOKEN = _m.group(0) if _m else RAW_TOKEN.strip()
 PAGE_ID = os.environ.get("FB_PAGE_ID", "1155560334313168")
 REPO = os.environ.get("GITHUB_REPOSITORY", "shohankhan324/everydaycart-media")
-SHA = os.environ.get("GITHUB_SHA", "main")
+def _head():
+    try:
+        import subprocess
+        return subprocess.check_output(["git", "-C", str(ROOT), "rev-parse", "HEAD"], text=True).strip()
+    except Exception:
+        return os.environ.get("GITHUB_SHA", "main")
+SHA = _head()
 PAGES_BASE = os.environ.get("PAGES_BASE", "").rstrip("/")
 MODE = os.environ.get("MODE", "run").strip() or "run"
 
@@ -250,7 +256,21 @@ def check():
         log(f"(could not read token details: {e})")
 
 
+def seconds_to_next():
+    """Seconds until the next post needs publishing; 600 if one is already due (catch-up spacing); -1 if none."""
+    queue, state, now = load(QUEUE, []), load(STATE, {}), now_utc()
+    pend = [parse_time(p["time"]) for p in queue if pending_networks(p, state)
+            and (now - parse_time(p["time"])).total_seconds() / 3600 <= MAX_OVERDUE_HOURS]
+    if not pend:
+        return -1
+    s = int((min(pend) - now).total_seconds())
+    return 600 if s <= 0 else s
+
+
 def main():
+    if MODE == "next":
+        print(seconds_to_next())
+        return 0
     code = 0
     try:
         if MODE == "dry-run":
