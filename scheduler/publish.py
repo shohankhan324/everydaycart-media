@@ -9,6 +9,7 @@ Run by .github/workflows/publish.yml every 15 minutes. Modes (env MODE):
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -20,7 +21,9 @@ QUEUE = ROOT / "scheduler" / "queue.json"
 STATE = ROOT / "scheduler" / "state.json"
 
 GRAPH = "https://graph.facebook.com/" + os.environ.get("GRAPH_VERSION", "v23.0")
-TOKEN = os.environ.get("META_PAGE_TOKEN", "").strip()
+RAW_TOKEN = os.environ.get("META_PAGE_TOKEN", "")
+_m = re.search(r"EAA[A-Za-z0-9]+", RAW_TOKEN)        # tolerate pasted quotes, commas or "access_token": prefix
+TOKEN = _m.group(0) if _m else RAW_TOKEN.strip()
 PAGE_ID = os.environ.get("FB_PAGE_ID", "1155560334313168")
 REPO = os.environ.get("GITHUB_REPOSITORY", "shohankhan324/everydaycart-media")
 SHA = os.environ.get("GITHUB_SHA", "main")
@@ -233,6 +236,7 @@ def run(dry=False):
 
 
 def check():
+    log(f"Secret: {len(RAW_TOKEN)} characters, token found: {'yes' if _m else 'no'}, token length {len(TOKEN)}, starts with EAA: {TOKEN.startswith('EAA')}")
     me = graph("GET", PAGE_ID, fields="name,instagram_business_account{username,id}")
     log(f"Page: {me.get('name')} ({PAGE_ID})")
     acct = me.get("instagram_business_account")
