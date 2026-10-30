@@ -171,10 +171,12 @@
       "error": null
     },
     "instagram": {
-      "container": "18098588582385500",
       "attempts": 1,
-      "error": "Media ID is not available (code 9007, subcode 2207027)",
-      "status": "retry"
+      "error": null,
+      "status": "published",
+      "id": "18114441977140366",
+      "url": "https://www.instagram.com/p/DfH6GxhF1ag/",
+      "at": "2026-10-30T15:40:58+00:00"
     }
   }
 }
