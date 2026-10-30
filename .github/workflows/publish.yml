@@ -32,6 +32,7 @@ jobs:
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           FB_PAGE_ID: "1155560334313168"
+          GRAPH_VERSION: "v26.0"
           PAGES_BASE: "https://shohankhan324.github.io/everydaycart-media"
           MODE: ${{ inputs.mode || 'run' }}
         run: python3 scheduler/publish.py
