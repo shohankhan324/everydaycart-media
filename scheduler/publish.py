@@ -174,7 +174,14 @@ def ig_publish(post, entry, state):
     wait = REEL_WAIT_SECONDS if post["type"] == "reel" else 90
     if not ig_wait(container, wait):
         return None                                  # still processing, resume next run
-    mid = graph("POST", f"{ig}/media_publish", creation_id=container)["id"]
+    for attempt in range(4):                     # "Media ID is not available" (9007) clears after a few seconds
+        try:
+            mid = graph("POST", f"{ig}/media_publish", creation_id=container)["id"]
+            break
+        except GraphError as e:
+            if "code 9007" not in str(e) or attempt == 3:
+                raise
+            time.sleep(10)
     link = graph("GET", mid, fields="permalink").get("permalink", "")
     return {"id": mid, "url": link}
 
