@@ -129,5 +129,21 @@
       "at": "2026-10-30T11:00:31+00:00",
       "error": null
     }
+  },
+  "2026-10-30-kodomo-toothpaste": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141657085382754",
+      "url": "https://www.facebook.com/1155560334313168_122141657085382754",
+      "at": "2026-10-30T12:30:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18122945078289717",
+      "url": "https://www.instagram.com/p/DfHlgm7GMD_/",
+      "at": "2026-10-30T12:30:29+00:00",
+      "error": null
+    }
   }
 }
