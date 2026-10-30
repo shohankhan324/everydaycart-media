@@ -1,6 +1,6 @@
-2026-10-30T04:17:44+00:00 mode=check
-Secret: 225 characters, token found: yes, token length 200, starts with EAA: True
-Page: Everyday Cart (1155560334313168)
-Instagram: @everydaycart.bd (17841441564973760)
-Token type: PAGE, expires: never
-Permissions: pages_show_list, business_management, instagram_basic, instagram_content_publish, pages_read_engagement, pages_manage_posts, public_profile
+2026-10-30T04:20:52+00:00 mode=run
+Now 2026-10-30T04:19+00:00 UTC. Due: 3. Upcoming: 8.
+POST 2026-10-30-reel-gadget-deals (reel, scheduled 2026-10-30T10:15:00+06:00)
+  facebook: published https://www.facebook.com/reel/4696331727320340
+  instagram: published https://www.instagram.com/reel/DfGtbnxhxZt/
+Next: 2026-10-30-top-gadget-picks at 2026-10-30T11:00:00+06:00

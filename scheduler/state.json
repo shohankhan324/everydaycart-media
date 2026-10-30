@@ -1,1 +1,21 @@
-{}
+{
+  "2026-10-30-reel-gadget-deals": {
+    "facebook": {
+      "status": "published",
+      "id": "4696331727320340",
+      "url": "https://www.facebook.com/reel/4696331727320340",
+      "at": "2026-10-30T04:20:02+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17999148875830769",
+      "url": "https://www.instagram.com/reel/DfGtbnxhxZt/",
+      "at": "2026-10-30T04:20:52+00:00",
+      "error": null
+    }
+  },
+  "_meta": {
+    "ig_user_id": "17841441564973760"
+  }
+}
