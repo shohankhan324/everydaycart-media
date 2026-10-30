@@ -49,5 +49,21 @@
       "at": "2026-10-30T04:23:29+00:00",
       "error": null
     }
+  },
+  "2026-10-30-top-gadget-picks": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141587149382754",
+      "url": "https://www.facebook.com/1155560334313168_122141587149382754",
+      "at": "2026-10-30T05:27:04+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17980061771924624",
+      "url": "https://www.instagram.com/p/DfG1EmflOW9/",
+      "at": "2026-10-30T05:27:12+00:00",
+      "error": null
+    }
   }
 }
