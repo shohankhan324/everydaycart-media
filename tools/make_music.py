@@ -119,7 +119,7 @@ def gentle(dur, key=5):
     return master(mix, dur)
 
 if __name__ == "__main__":
-    out = "/tmp/claude-0/-home-claude/da0f4f16-de8b-599c-9c43-7f614620f3dd/scratchpad/music/"
+    out = os.path.dirname(os.path.abspath(__file__)) + "/music/"
     import os; os.makedirs(out, exist_ok=True)
     for name, fn, dur, key in [("gadget", upbeat, 13.9, 0), ("watch", upbeat, 9.0, 2), ("baby", gentle, 12.1, 5)]:
         x = fn(dur, key)

@@ -1,6 +1,6 @@
 """Everyday Cart gadget carousel: 7 square cards (1080x1080) with decor that flows across card edges."""
 import os, sys
-sys.path.insert(0, "/tmp/claude-0/-home-claude/da0f4f16-de8b-599c-9c43-7f614620f3dd/scratchpad")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import render_flat as rf
 from render_flat import f, P, fit, place, tk, load_logo, check_icon, card_shadow, S, SAGE, SAGE_L, ROSE, INK, MUTE, CREAM
 from PIL import Image, ImageDraw
