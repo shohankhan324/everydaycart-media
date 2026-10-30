@@ -161,5 +161,20 @@
       "at": "2026-10-30T14:00:34+00:00",
       "error": null
     }
+  },
+  "2026-10-30-kodomo-toothbrush": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141684865382754",
+      "url": "https://www.facebook.com/1155560334313168_122141684865382754",
+      "at": "2026-10-30T15:30:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "container": "18098588582385500",
+      "attempts": 1,
+      "error": "Media ID is not available (code 9007, subcode 2207027)",
+      "status": "retry"
+    }
   }
 }
