@@ -226,5 +226,21 @@
       "at": "2026-10-31T08:00:27+00:00",
       "error": null
     }
+  },
+  "2026-10-31-spacebuds-lite": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141855133382754",
+      "url": "https://www.facebook.com/1155560334313168_122141855133382754",
+      "at": "2026-10-31T09:30:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17955618522039812",
+      "url": "https://www.instagram.com/p/DfJ1tBPoCqE/",
+      "at": "2026-10-31T09:30:32+00:00",
+      "error": null
+    }
   }
 }
