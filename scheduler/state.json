@@ -210,5 +210,21 @@
       "at": "2026-10-31T06:30:33+00:00",
       "error": null
     }
+  },
+  "2026-10-31-winter-thermal-picks": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141839761382754",
+      "url": "https://www.facebook.com/1155560334313168_122141839761382754",
+      "at": "2026-10-31T08:00:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18162008449441112",
+      "url": "https://www.instagram.com/p/DfJrZxOjn5n/",
+      "at": "2026-10-31T08:00:27+00:00",
+      "error": null
+    }
   }
 }
