@@ -178,5 +178,21 @@
       "url": "https://www.instagram.com/p/DfH6GxhF1ag/",
       "at": "2026-10-30T15:40:58+00:00"
     }
+  },
+  "2026-10-31-awei-t108": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141815995382754",
+      "url": "https://www.facebook.com/1155560334313168_122141815995382754",
+      "at": "2026-10-31T05:00:17+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17952244908056101",
+      "url": "https://www.instagram.com/p/DfJWzN3gSBT/",
+      "at": "2026-10-31T05:00:37+00:00",
+      "error": null
+    }
   }
 }
