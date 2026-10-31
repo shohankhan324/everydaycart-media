@@ -258,5 +258,21 @@
       "at": "2026-10-31T11:00:34+00:00",
       "error": null
     }
+  },
+  "2026-10-31-premium-thermal-tumbler": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122141879661382754",
+      "url": "https://www.facebook.com/1155560334313168_122141879661382754",
+      "at": "2026-10-31T12:30:20+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17908972800570665",
+      "url": "https://www.instagram.com/p/DfKKTZll-PW/",
+      "at": "2026-10-31T12:30:27+00:00",
+      "error": null
+    }
   }
 }
