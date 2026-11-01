@@ -306,5 +306,21 @@
       "at": "2026-10-31T15:30:36+00:00",
       "error": null
     }
+  },
+  "2026-11-01-reel-wear-your-vibe": {
+    "facebook": {
+      "status": "published",
+      "id": "1755708942168323",
+      "url": "https://www.facebook.com/reel/1755708942168323",
+      "at": "2026-11-01T03:34:21+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18135825970659113",
+      "url": "https://www.instagram.com/reel/DfLxw8ooPYc/",
+      "at": "2026-11-01T03:34:57+00:00",
+      "error": null
+    }
   }
 }
