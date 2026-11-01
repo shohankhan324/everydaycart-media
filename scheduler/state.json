@@ -338,5 +338,21 @@
       "at": "2026-11-01T03:48:19+00:00",
       "error": null
     }
+  },
+  "2026-11-01-have-good-time-tumbler": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142004599382754",
+      "url": "https://www.facebook.com/1155560334313168_122142004599382754",
+      "at": "2026-11-01T05:00:23+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18135281452786958",
+      "url": "https://www.instagram.com/p/DfL7m12G-ej/",
+      "at": "2026-11-01T05:00:31+00:00",
+      "error": null
+    }
   }
 }
