@@ -450,5 +450,21 @@
       "at": "2026-11-01T14:01:04+00:00",
       "error": null
     }
+  },
+  "2026-11-01-big-mac-316-cup": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142092025382754",
+      "url": "https://www.facebook.com/1155560334313168_122142092025382754",
+      "at": "2026-11-01T15:30:20+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18133747448354948",
+      "url": "https://www.instagram.com/p/DfNDssgFx6F/",
+      "at": "2026-11-01T15:30:34+00:00",
+      "error": null
+    }
   }
 }
