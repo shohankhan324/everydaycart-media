@@ -418,5 +418,21 @@
       "at": "2026-11-01T11:00:26+00:00",
       "error": null
     }
+  },
+  "2026-11-01-spacebuds-neo-plus": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142063561382754",
+      "url": "https://www.facebook.com/1155560334313168_122142063561382754",
+      "at": "2026-11-01T12:30:18+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17895531192681874",
+      "url": "https://www.instagram.com/p/DfMvGOymAke/",
+      "at": "2026-11-01T12:30:27+00:00",
+      "error": null
+    }
   }
 }
