@@ -354,5 +354,21 @@
       "at": "2026-11-01T05:00:31+00:00",
       "error": null
     }
+  },
+  "2026-11-01-baby-care-kit": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142015525382754",
+      "url": "https://www.facebook.com/1155560334313168_122142015525382754",
+      "at": "2026-11-01T06:30:18+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18117579287037109",
+      "url": "https://www.instagram.com/p/DfMF5Y7Acfu/",
+      "at": "2026-11-01T06:30:31+00:00",
+      "error": null
+    }
   }
 }
