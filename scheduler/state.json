@@ -322,5 +322,21 @@
       "at": "2026-11-01T03:34:57+00:00",
       "error": null
     }
+  },
+  "2026-11-01-reel-gadget-show": {
+    "facebook": {
+      "status": "published",
+      "id": "1633947701715222",
+      "url": "https://www.facebook.com/reel/1633947701715222",
+      "at": "2026-11-01T03:47:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17891017716685295",
+      "url": "https://www.instagram.com/reel/DfLzQozhAsS/",
+      "at": "2026-11-01T03:48:19+00:00",
+      "error": null
+    }
   }
 }
