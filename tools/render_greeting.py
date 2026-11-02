@@ -149,4 +149,4 @@ if __name__ == "__main__":
     rf.OUTDIR = sys.argv[1] if len(sys.argv) > 1 else rf.OUTDIR
     os.makedirs(rf.OUTDIR, exist_ok=True)
     if len(sys.argv) > 2 and sys.argv[2] == "1111": offer_11_11()
-    else: dipaboli("2026-11-08_shubho_dipaboli")
+    else: print("usage: render_greeting.py OUTDIR 1111")
