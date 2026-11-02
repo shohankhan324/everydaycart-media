@@ -514,5 +514,21 @@
       "at": "2026-11-02T08:00:33+00:00",
       "error": null
     }
+  },
+  "2026-11-02-big-teddy-bear": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142230379382754",
+      "url": "https://www.facebook.com/1155560334313168_122142230379382754",
+      "at": "2026-11-02T09:30:26+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18113565296350890",
+      "url": "https://www.instagram.com/p/DfO_TlaoADY/",
+      "at": "2026-11-02T09:30:39+00:00",
+      "error": null
+    }
   }
 }
