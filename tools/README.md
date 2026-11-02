@@ -3,6 +3,8 @@
 Scripts used to make Everyday Cart social posts. Output goes to /mnt/user-data/outputs/.
 
 - `render_flat.py`: flat post templates A (split panel), B (colour card), C (collection grid). Edit POSTS, run with post numbers.
+- `render_styles.py`: extra styles D (arch poster), E (scalloped header + feature tiles), F (list menu); `TEMPLATES` maps A to F.
+- Daily batches (`batch_YYYY_MM_DD.py`) must use a DIFFERENT style set from the previous day. Check and update `posts/style_log.json`.
 - `render_carousel.py`: 7-card square carousel.
 - `render_video.py` + `make_music.py`: 1080x1920 Reels with original synthesized music (mux with ffmpeg).
 - `prep_hq.py`: high-quality product cutouts (rembg isnet-general-use, EDSR upscaling for small photos, edge cleanup).

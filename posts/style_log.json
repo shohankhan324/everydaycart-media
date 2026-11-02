@@ -1,0 +1,13 @@
+{
+  "rule": "Owner wants a different design every day. Never reuse the previous day's style set; rotate through the sets in tools/render_styles.py and add a new set when all have been used recently.",
+  "sets": {
+    "1": "render_flat A split panel, B colour card, C collection grid",
+    "2": "render_styles D arch poster, E scalloped header + feature tiles, F list menu"
+  },
+  "log": {
+    "2026-10-30": "1",
+    "2026-10-31": "1",
+    "2026-11-01": "1",
+    "2026-11-02": "2"
+  }
+}
