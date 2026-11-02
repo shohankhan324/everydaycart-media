@@ -498,5 +498,21 @@
       "at": "2026-11-02T06:30:34+00:00",
       "error": null
     }
+  },
+  "2026-11-02-earbuds-neckband-lineup": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142218115382754",
+      "url": "https://www.facebook.com/1155560334313168_122142218115382754",
+      "at": "2026-11-02T08:00:20+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18098217026452292",
+      "url": "https://www.instagram.com/p/DfO0_rfl7iV/",
+      "at": "2026-11-02T08:00:33+00:00",
+      "error": null
+    }
   }
 }
