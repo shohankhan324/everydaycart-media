@@ -562,5 +562,21 @@
       "at": "2026-11-02T12:30:32+00:00",
       "error": null
     }
+  },
+  "2026-11-02-silent-alarm-clock": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142272091382754",
+      "url": "https://www.facebook.com/1155560334313168_122142272091382754",
+      "at": "2026-11-02T14:00:29+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18117298187008266",
+      "url": "https://www.instagram.com/p/DfPeNhGF55i/",
+      "at": "2026-11-02T14:00:42+00:00",
+      "error": null
+    }
   }
 }
