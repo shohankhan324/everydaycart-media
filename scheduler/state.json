@@ -482,5 +482,21 @@
       "at": "2026-11-02T05:30:30+00:00",
       "error": null
     }
+  },
+  "2026-11-02-colmi-p81": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142205113382754",
+      "url": "https://www.facebook.com/1155560334313168_122142205113382754",
+      "at": "2026-11-02T06:30:25+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18092063153690542",
+      "url": "https://www.instagram.com/p/DfOqtLblQuk/",
+      "at": "2026-11-02T06:30:34+00:00",
+      "error": null
+    }
   }
 }
