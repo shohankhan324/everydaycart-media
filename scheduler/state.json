@@ -466,5 +466,21 @@
       "at": "2026-11-01T15:30:34+00:00",
       "error": null
     }
+  },
+  "2026-11-02-oraimo-spacebox": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142197427382754",
+      "url": "https://www.facebook.com/1155560334313168_122142197427382754",
+      "at": "2026-11-02T05:30:16+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18104791298035504",
+      "url": "https://www.instagram.com/p/DfOj0lqGy9j/",
+      "at": "2026-11-02T05:30:30+00:00",
+      "error": null
+    }
   }
 }
