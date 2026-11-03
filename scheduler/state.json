@@ -690,5 +690,21 @@
       "at": "2026-11-03T11:46:00+00:00",
       "error": null
     }
+  },
+  "2026-11-03-reel-gift-guide": {
+    "facebook": {
+      "status": "published",
+      "id": "1443347427905193",
+      "url": "https://www.facebook.com/reel/1443347427905193",
+      "at": "2026-11-03T13:00:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18108687332459059",
+      "url": "https://www.instagram.com/reel/DfR8NuCKnS2/",
+      "at": "2026-11-03T13:01:44+00:00",
+      "error": null
+    }
   }
 }
