@@ -594,5 +594,21 @@
       "at": "2026-11-02T15:30:30+00:00",
       "error": null
     }
+  },
+  "2026-11-03-reel-guess-spacebox": {
+    "facebook": {
+      "status": "published",
+      "id": "4503205623325375",
+      "url": "https://www.facebook.com/reel/4503205623325375",
+      "at": "2026-11-03T05:30:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17987240001086862",
+      "url": "https://www.instagram.com/reel/DfRIouIqlXh/",
+      "at": "2026-11-03T05:31:03+00:00",
+      "error": null
+    }
   }
 }
