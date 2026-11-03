@@ -23,11 +23,11 @@ def impact():
     t = t_(1.6); return (np.sin(2 * np.pi * 48 * t * (1 + 2 * np.exp(-t * 18))) * np.exp(-t * 3.2)
                          + lp(rng.standard_normal(len(t)), 2500) * np.exp(-t * 7) * 0.4)
 
-def drive(dur, drop, cuts, end_hit):
+def drive(dur, drop, cuts, end_hit, key=0):
     L = int((dur + 3) * SR)
     drums = np.zeros(L); bs = np.zeros(L); keys = np.zeros(L); lead = np.zeros(L); fx = np.zeros(L); env = np.zeros(L)
     # Am F C G
-    prog = [(45, [57, 60, 64]), (41, [57, 60, 65]), (48, [55, 60, 64]), (43, [55, 59, 62])]
+    prog = [(r + key, [c + key for c in ch]) for r, ch in [(45, [57, 60, 64]), (41, [57, 60, 65]), (48, [55, 60, 64]), (43, [55, 59, 62])]]
     # intro: filtered stabs + snare roll + riser
     nb_in = int(round(drop / B))
     for q in range(nb_in):
