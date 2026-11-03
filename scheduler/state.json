@@ -626,5 +626,21 @@
       "at": "2026-11-03T06:45:50+00:00",
       "error": null
     }
+  },
+  "2026-11-03-reel-watch-vs": {
+    "facebook": {
+      "status": "published",
+      "id": "1159285896624563",
+      "url": "https://www.facebook.com/reel/1159285896624563",
+      "at": "2026-11-03T08:00:23+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18122506286035679",
+      "url": "https://www.instagram.com/reel/DfRZ07nSC7i/",
+      "at": "2026-11-03T08:01:11+00:00",
+      "error": null
+    }
   }
 }
