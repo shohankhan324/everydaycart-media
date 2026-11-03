@@ -610,5 +610,21 @@
       "at": "2026-11-03T05:31:03+00:00",
       "error": null
     }
+  },
+  "2026-11-03-reel-mom-must-haves": {
+    "facebook": {
+      "status": "published",
+      "id": "1009682232168093",
+      "url": "https://www.facebook.com/reel/1009682232168093",
+      "at": "2026-11-03T06:45:25+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18018002252967328",
+      "url": "https://www.instagram.com/reel/DfRROIwMS9U/",
+      "at": "2026-11-03T06:45:50+00:00",
+      "error": null
+    }
   }
 }
