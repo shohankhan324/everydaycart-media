@@ -706,5 +706,21 @@
       "at": "2026-11-03T13:01:44+00:00",
       "error": null
     }
+  },
+  "2026-11-03-reel-top5-gadgets": {
+    "facebook": {
+      "status": "published",
+      "id": "1616005253056408",
+      "url": "https://www.facebook.com/reel/1616005253056408",
+      "at": "2026-11-03T14:15:25+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18119032193007083",
+      "url": "https://www.instagram.com/reel/DfSEuFgRcHM/",
+      "at": "2026-11-03T14:16:01+00:00",
+      "error": null
+    }
   }
 }
