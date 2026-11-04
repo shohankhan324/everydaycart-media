@@ -738,5 +738,21 @@
       "at": "2026-11-03T15:31:03+00:00",
       "error": null
     }
+  },
+  "2026-11-04-insulated-lunch-box": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142566463382754",
+      "url": "https://www.facebook.com/1155560334313168_122142566463382754",
+      "at": "2026-11-04T05:00:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18121737503067183",
+      "url": "https://www.instagram.com/p/DfTp_WSgU9f/",
+      "at": "2026-11-04T05:00:35+00:00",
+      "error": null
+    }
   }
 }
