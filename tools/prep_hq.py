@@ -168,6 +168,17 @@ def job(key):
         img = src("10-pc-baby-care-kit-2"); return refine(img, keep_largest(matte(img)))
     if key == "22":
         img = src("120-ml-minitree-baby-feeding-bottle-0"); return refine(img, keep_largest(matte(img)))
+    # 4 Nov additions (Lanczos 2x where the photo is small; EDSR models are optional)
+    def big(name, k=2):
+        im = src(name); return im.resize((im.width * k, im.height * k), Image.LANCZOS) if k > 1 else im
+    if key == "23": img = src("full-automatic-dual-purpose-folding-umbrella-0"); return refine(img, keep_largest(matte(img)))
+    if key == "24": img = big("n607-mini-handheld-portable-cooling-fan-0"); return refine(img, keep_largest(matte(img)), erode=1)
+    if key == "25": img = src("617-elephant-stuffed-animals-soft-toys-0"); return refine(img, keep_largest(matte(img)), erode=2)
+    if key == "26": img = big("stainless-steal-insulated-lunch-box-0"); return refine(img, keep_largest(matte(img), frac=0.3), erode=1)
+    if key == "27": img = src("portable-bbq-grill-machine-2"); return refine(img, keep_largest(flood_alpha(img, 22)), choke=0.05)
+    if key == "28": img = src("soft-cushioned-baby-toilet-seat-reducer-with-handles-18-months-2"); return refine(img, keep_largest(matte(img)))
+    if key == "29": img = src("premium-cleaning-gloves-0"); return refine(img, keep_largest(matte(img), frac=0.3))
+    if key == "30": img = src("wide-neck-baby-feeder-1"); return refine(img, keep_largest(matte(img), frac=0.2))
 
 if __name__ == "__main__":
     keys = sys.argv[1:] or [f"{i:02d}" for i in range(1, 23)]
