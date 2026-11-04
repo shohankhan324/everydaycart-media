@@ -786,5 +786,21 @@
       "at": "2026-11-04T06:30:35+00:00",
       "error": null
     }
+  },
+  "2026-11-04-portable-cooling-fan": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142585783382754",
+      "url": "https://www.facebook.com/1155560334313168_122142585783382754",
+      "at": "2026-11-04T08:00:23+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17930437650431324",
+      "url": "https://www.instagram.com/p/DfT-lzxl8sC/",
+      "at": "2026-11-04T08:00:36+00:00",
+      "error": null
+    }
   }
 }
