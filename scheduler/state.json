@@ -1010,5 +1010,21 @@
       "at": "2026-11-05T12:00:31+00:00",
       "error": null
     }
+  },
+  "2026-11-05-minitree-tritan": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142841989382754",
+      "url": "https://www.facebook.com/1155560334313168_122142841989382754",
+      "at": "2026-11-05T13:16:56+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17992274570866665",
+      "url": "https://www.instagram.com/p/DfXHnJkl8tw/",
+      "at": "2026-11-05T13:17:04+00:00",
+      "error": null
+    }
   }
 }
