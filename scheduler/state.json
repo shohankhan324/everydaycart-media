@@ -946,5 +946,21 @@
       "at": "2026-11-05T07:00:35+00:00",
       "error": null
     }
+  },
+  "2026-11-05-premium-thermal-water-bottle": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142798237382754",
+      "url": "https://www.facebook.com/1155560334313168_122142798237382754",
+      "at": "2026-11-05T08:15:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18154142317527361",
+      "url": "https://www.instagram.com/p/DfWlGahl7uu/",
+      "at": "2026-11-05T08:15:36+00:00",
+      "error": null
+    }
   }
 }
