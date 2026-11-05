@@ -1,8 +1,11 @@
 """Animated Reels for review (4 Nov): day story, cart fill, product drop, Bangla winter."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import os, sys, math, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
-sys.path.insert(0, "/home/claude/everydaycart-media/tools"); sys.path.insert(0, "/home/claude/viral")
+sys.path.insert(0, _T); sys.path.insert(0, _R)
 from mega import T, TB, P, pill, bn_pill, bg, wipe, logo, rays, disc, confetti, steam, put, rgba, f, ease, back, clamp, HQ, FL, DARK, WHITE, YEL, CORAL, BLUE, PURP, GREEN, ORANGE, _tc
 from reels9 import end_card, encode, bn_num, LOGO_BIG
 import drive as DR
@@ -10,7 +13,7 @@ import make_music as MM
 from scipy.io import wavfile
 
 W, H, FPS = 1080, 1920, 30
-OUT = "/home/claude/viral/anim/"; os.makedirs(OUT, exist_ok=True)
+OUT = _R + "/out/anim/"; os.makedirs(OUT, exist_ok=True)
 def lerp(a, b, k): return tuple(int(x + (y - x) * k) for x, y in zip(a, b))
 
 # ======================================================= A. A day with Everyday Cart

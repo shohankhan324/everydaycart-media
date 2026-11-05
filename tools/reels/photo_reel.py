@@ -1,8 +1,11 @@
 """Real-people gadget Reel: licensed lifestyle photos + real product cards, beat-synced, original music."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import os, sys, math, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
-sys.path.insert(0, "/home/claude/everydaycart-media/tools"); sys.path.insert(0, "/home/claude/viral")
+sys.path.insert(0, _T); sys.path.insert(0, _R)
 from render_video import f, clamp, ease, back, product_sprite, pill_sprite
 from viral import put, text_spr, LOGO, LOGO_CARD, PRODS, rgba, DARK, WHITE
 from drive import drive, B, SR
@@ -10,8 +13,8 @@ from scipy.io import wavfile
 
 W, H, FPS = 1080, 1920, 30
 A = "/mnt/user-data/attachments/da0f4f16-de8b-599c-9c43-7f614620f3dd/"
-HQ = "/home/claude/everydaycart-media/tools/cutouts/hq/"
-OUT = "/home/claude/viral/out_photo/"; os.makedirs(OUT, exist_ok=True)
+HQ = _T + "/cutouts/hq/"
+OUT = _R + "/out/out_photo/"; os.makedirs(OUT, exist_ok=True)
 Z = 1.12  # pre-scale headroom for the slow zoom
 
 def cover(path, fx, fy):

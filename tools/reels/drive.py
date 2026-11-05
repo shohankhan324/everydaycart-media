@@ -1,7 +1,10 @@
 """Original 124 BPM dance-pop track: build-up intro, drop on the first product, whooshes on every cut."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import sys
 import numpy as np
-sys.path.insert(0, "/home/claude/everydaycart-media/tools")
+sys.path.insert(0, _T)
 from make_music import (SR, hz, t_, lp, hp, add, kick, snare, clap, hat, bass, pluck, pad, bell, reverb, master, rng)
 
 BPM = 124; B = 60 / BPM; BAR = 4 * B

@@ -1,4 +1,7 @@
 """Flat silhouette people (SVG paths, 1000x1200 box, facing right) rendered with cairosvg."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import io
 import cairosvg
 from PIL import Image

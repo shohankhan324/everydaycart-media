@@ -1,9 +1,12 @@
 """'Wear Your Vibe' gadget Reel: flat silhouettes of women and men wearing in-stock Oraimo / Awei gadgets."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import io, os, sys, math, subprocess
 import numpy as np
 import cairosvg
 from PIL import Image, ImageDraw, ImageFilter
-sys.path.insert(0, "/home/claude/everydaycart-media/tools"); sys.path.insert(0, "/home/claude/viral")
+sys.path.insert(0, _T); sys.path.insert(0, _R)
 from render_video import f, clamp, ease, back, product_sprite, pill_sprite
 from render_flat import load_logo
 from shapes import WOMAN, MAN, ARM
@@ -11,8 +14,8 @@ from drive import drive, B, SR
 from scipy.io import wavfile
 
 W, H, FPS = 1080, 1920, 30
-HQ = "/home/claude/everydaycart-media/tools/cutouts/hq/"
-OUT = "/home/claude/viral/out/"; os.makedirs(OUT, exist_ok=True)
+HQ = _T + "/cutouts/hq/"
+OUT = _R + "/out/out/"; os.makedirs(OUT, exist_ok=True)
 DARK = (22, 23, 28); WHITE = (255, 255, 255)
 
 # ---------- silhouettes + accessories (SVG in the 1000x1200 box) ----------

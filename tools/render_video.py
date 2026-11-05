@@ -6,7 +6,7 @@ sys.path.insert(0, D)
 from render_flat import load_logo
 
 OUT = "/mnt/user-data/outputs/everydaycart_videos/"; os.makedirs(OUT, exist_ok=True)
-G = "/usr/share/fonts/truetype/google-fonts/"
+G = "/usr/share/fonts/truetype/google-fonts/" if os.path.exists("/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "fonts") + "/"
 W, H, FPS, T = 1080, 1920, 30, 0.3
 SAGE = (98, 120, 92); SAGE_L = (220, 230, 214); ROSE = (165, 112, 111)
 INK = (44, 46, 42); MUTE = (122, 116, 114); CREAM = (251, 246, 242)

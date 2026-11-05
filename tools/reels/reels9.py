@@ -1,8 +1,11 @@
 """Nine Everyday Cart Reels for 3 Nov: each its own concept, palette and music."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import os, sys, math, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
-sys.path.insert(0, "/home/claude/everydaycart-media/tools"); sys.path.insert(0, "/home/claude/viral")
+sys.path.insert(0, _T); sys.path.insert(0, _R)
 from mega import (T, TB, P, pill, bn_pill, bg, wipe, logo, rays, disc, confetti, steam, put, rgba, f, ease, back, clamp,
                   LOGO, HQ, FL, DARK, WHITE, YEL, CORAL, BLUE, PURP, GREEN, CREAM, ORANGE, _tc)
 import drive as DR
@@ -10,7 +13,7 @@ import make_music as MM
 from scipy.io import wavfile
 
 W, H, FPS = 1080, 1920, 30
-OUT = "/home/claude/viral/out9/"; os.makedirs(OUT, exist_ok=True)
+OUT = _R + "/out/out9/"; os.makedirs(OUT, exist_ok=True)
 NAVY = (22, 30, 66); MINT = (198, 238, 222); PEACH = (255, 214, 196); LILAC = (226, 214, 255); TEAL = (14, 120, 120)
 BN_DIG = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
 def bn_num(n): return f"{n:,}".translate(BN_DIG)

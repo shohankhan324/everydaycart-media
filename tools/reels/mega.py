@@ -1,18 +1,21 @@
 """Everyday Cart 'Gadget Show' long Reel: 10 beat-synced segments, original music, flat style."""
+import os as _os
+_R = _os.path.dirname(_os.path.abspath(__file__)); _T = _os.path.dirname(_R)
+
 import os, sys, math, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
-sys.path.insert(0, "/home/claude/everydaycart-media/tools"); sys.path.insert(0, "/home/claude/viral")
+sys.path.insert(0, _T); sys.path.insert(0, _R)
 from render_video import f, clamp, ease, back, product_sprite, pill_sprite
 from viral import put, LOGO, LOGO_CARD, rgba
 from drive import drive, B, SR
 from scipy.io import wavfile
 
 W, H, FPS = 1080, 1920, 30
-HQ = "/home/claude/everydaycart-media/tools/cutouts/hq/"; FL = "/home/claude/everydaycart-media/tools/cutouts/flat/"
-OUT = "/home/claude/viral/out_mega/"; os.makedirs(OUT, exist_ok=True)
+HQ = _T + "/cutouts/hq/"; FL = _T + "/cutouts/flat/"
+OUT = _R + "/out/out_mega/"; os.makedirs(OUT, exist_ok=True)
 _tc = {}
-BN = "/home/claude/fonts/package/files/hind-siliguri-bengali-%d-normal.woff"
+BN = _T + "/assets/fonts/hind-siliguri-bengali-%d-normal.woff"
 DARK = (20, 21, 27); WHITE = (255, 255, 255); YEL = (255, 200, 46); CORAL = (255, 98, 86); BLUE = (46, 98, 255)
 PURP = (124, 76, 245); GREEN = (18, 184, 134); CREAM = (255, 246, 236); ORANGE = (255, 138, 40)
 
@@ -20,7 +23,7 @@ _fb = {}
 def fb(w, s):
     if (w, s) not in _fb: _fb[(w, s)] = ImageFont.truetype(BN % w, s, layout_engine=ImageFont.Layout.RAQM)
     return _fb[(w, s)]
-BNL = "/home/claude/fonts/package/files/hind-siliguri-latin-%d-normal.woff"
+BNL = _T + "/assets/fonts/hind-siliguri-latin-%d-normal.woff"
 def is_bn(ch): return '\u0980' <= ch <= '\u09ff' or ch in ' \u200c\u200d'
 def TB(text, w, size, col, shadow=False):
     k = ("tb", text, w, size, col, shadow)
