@@ -1026,5 +1026,21 @@
       "at": "2026-11-05T13:17:04+00:00",
       "error": null
     }
+  },
+  "2026-11-05-necklace-lite": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142852303382754",
+      "url": "https://www.facebook.com/1155560334313168_122142852303382754",
+      "at": "2026-11-05T14:30:28+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18132230620761056",
+      "url": "https://www.instagram.com/p/DfXQBoZFy19/",
+      "at": "2026-11-05T14:30:41+00:00",
+      "error": null
+    }
   }
 }
