@@ -1042,5 +1042,21 @@
       "at": "2026-11-05T14:30:41+00:00",
       "error": null
     }
+  },
+  "2026-11-05-thermal-lineup": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142860553382754",
+      "url": "https://www.facebook.com/1155560334313168_122142860553382754",
+      "at": "2026-11-05T15:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18134128075828402",
+      "url": "https://www.instagram.com/p/DfXW4tvlJyP/",
+      "at": "2026-11-05T15:30:36+00:00",
+      "error": null
+    }
   }
 }
