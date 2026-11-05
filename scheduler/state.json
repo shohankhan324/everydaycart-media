@@ -962,5 +962,21 @@
       "at": "2026-11-05T08:15:36+00:00",
       "error": null
     }
+  },
+  "2026-11-05-kodomo-baby-care": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142809139382754",
+      "url": "https://www.facebook.com/1155560334313168_122142809139382754",
+      "at": "2026-11-05T09:30:21+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18356426986217867",
+      "url": "https://www.instagram.com/p/DfWtrk7lxDt/",
+      "at": "2026-11-05T09:30:34+00:00",
+      "error": null
+    }
   }
 }
