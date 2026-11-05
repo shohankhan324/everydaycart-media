@@ -978,5 +978,21 @@
       "at": "2026-11-05T09:30:34+00:00",
       "error": null
     }
+  },
+  "2026-11-05-awei-t88": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122142819621382754",
+      "url": "https://www.facebook.com/1155560334313168_122142819621382754",
+      "at": "2026-11-05T10:45:21+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18101034701531350",
+      "url": "https://www.instagram.com/p/DfW2Q2aIfw4/",
+      "at": "2026-11-05T10:45:31+00:00",
+      "error": null
+    }
   }
 }
