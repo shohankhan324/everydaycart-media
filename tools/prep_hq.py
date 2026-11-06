@@ -179,6 +179,15 @@ def job(key):
     if key == "28": img = src("soft-cushioned-baby-toilet-seat-reducer-with-handles-18-months-2"); return refine(img, keep_largest(matte(img)))
     if key == "29": img = src("premium-cleaning-gloves-0"); return refine(img, keep_largest(matte(img), frac=0.3))
     if key == "30": img = src("wide-neck-baby-feeder-1"); return refine(img, keep_largest(matte(img), frac=0.2))
+    if key == "31":   # massage gun: drop the blue/grey clock graphic behind it, keep enclosed highlights
+        img = src("message-gun-2").crop((0, 95, 800, 680)); a = matte(img)
+        I = np.asarray(img).astype(int)
+        junk = (I[..., 2] - np.maximum(I[..., 0], I[..., 1]) > 14)
+        junk[:140] |= (I[:140].min(axis=2) > 120) & (I[:140].max(axis=2) - I[:140].min(axis=2) < 30)
+        m = ndimage.binary_opening((a > 0.5) & ~junk, structure=np.ones((15, 15)))
+        m = ndimage.binary_fill_holes(ndimage.binary_closing(m, structure=np.ones((9, 9))))
+        m = ndimage.binary_dilation(m, iterations=1)
+        return refine(img, keep_largest(a * ndimage.gaussian_filter(m.astype(float), 0.8), frac=0.2), erode=1)
 
 if __name__ == "__main__":
     keys = sys.argv[1:] or [f"{i:02d}" for i in range(1, 23)]
