@@ -1170,5 +1170,21 @@
       "at": "2026-11-06T11:00:31+00:00",
       "error": null
     }
+  },
+  "2026-11-06-sound-gadget-picks": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143006143382754",
+      "url": "https://www.facebook.com/1155560334313168_122143006143382754",
+      "at": "2026-11-06T12:00:26+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18121038019967076",
+      "url": "https://www.instagram.com/p/DfZjprQDVBx/",
+      "at": "2026-11-06T12:00:34+00:00",
+      "error": null
+    }
   }
 }
