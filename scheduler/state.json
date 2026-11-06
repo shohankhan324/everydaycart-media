@@ -1138,5 +1138,21 @@
       "at": "2026-11-06T09:00:34+00:00",
       "error": null
     }
+  },
+  "2026-11-06-reel-cuddle-buddies": {
+    "facebook": {
+      "status": "published",
+      "id": "1493327882664169",
+      "url": "https://www.facebook.com/reel/1493327882664169",
+      "at": "2026-11-06T10:00:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18109900307218795",
+      "url": "https://www.instagram.com/reel/DfZV6kHpk9p/",
+      "at": "2026-11-06T10:00:56+00:00",
+      "error": null
+    }
   }
 }
