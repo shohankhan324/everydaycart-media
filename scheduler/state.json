@@ -1186,5 +1186,21 @@
       "at": "2026-11-06T12:00:34+00:00",
       "error": null
     }
+  },
+  "2026-11-06-awei-ka5": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143014843382754",
+      "url": "https://www.facebook.com/1155560334313168_122143014843382754",
+      "at": "2026-11-06T13:00:17+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18085667276341896",
+      "url": "https://www.instagram.com/p/DfZqgGAl_5m/",
+      "at": "2026-11-06T13:00:29+00:00",
+      "error": null
+    }
   }
 }
