@@ -35,6 +35,10 @@ def template_g(p):
     pf = f("Poppins-Bold.ttf", 84); pt = tk(p["price"])
     if p.get("label"): d.text(P(64, 1108), p["label"], font=f("Poppins-Medium.ttf", 26), fill=MUTE)
     d.text(P(64, 1130), pt, font=pf, fill=p.get("pricec", ROSE))
+    if p.get("regular", 0) > p["price"]:
+        px = 64 + d.textlength(pt, font=pf) / S + 24; of = f("Poppins-Regular.ttf", 32); o = tk(p["regular"])
+        ow = d.textlength(o, font=of) / S; d.text(P(px, 1182), o, font=of, fill=MUTE)
+        d.line(P(px - 2, 1203, px + ow + 2, 1203), fill=MUTE, width=3 * S)
     bf = f("Poppins-Bold.ttf", 28); bt = "Inbox to order"; bw = d.textlength(bt, font=bf) / S
     d.rounded_rectangle(P(W0 - 64 - bw - 64, 1150, W0 - 64, 1222), radius=36 * S, fill=col)
     d.text(P(W0 - 64 - bw - 32, 1166), bt, font=bf, fill="white")
@@ -68,6 +72,10 @@ def template_h(p):
     pw = d.textlength(pr, font=pf) / S; d.text(P(920 - pw / 2, 130), pr, font=pf, fill="white")
     lab = p.get("label", "ONLY"); lf = f("Poppins-Medium.ttf", 22); lw = d.textlength(lab, font=lf) / S
     d.text(P(920 - lw / 2, 96), lab, font=lf, fill=(255, 236, 230))
+    if p.get("regular", 0) > p["price"]:
+        of = f("Poppins-Regular.ttf", 24); o = tk(p["regular"]); ow = d.textlength(o, font=of) / S
+        d.text(P(920 - ow / 2, 192), o, font=of, fill=(255, 236, 230))
+        d.line(P(918 - ow / 2, 208, 922 + ow / 2, 208), fill=(255, 236, 230), width=2 * S)
     # footer under the card
     logo_chip(img, 330, H0 - 116, 150, fill=(255, 255, 255)); d = ImageDraw.Draw(img)
     bf = f("Poppins-Bold.ttf", 28); bt = "Order: everydaycart.online"; bw = d.textlength(bt, font=bf) / S
