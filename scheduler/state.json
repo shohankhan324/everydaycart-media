@@ -1378,5 +1378,21 @@
       "at": "2026-11-07T14:30:29+00:00",
       "error": null
     }
+  },
+  "2026-11-07-cleaning-gloves": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143219923382754",
+      "url": "https://www.facebook.com/1155560334313168_122143219923382754",
+      "at": "2026-11-07T15:30:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18148746745577805",
+      "url": "https://www.instagram.com/p/DfcgdteF6BK/",
+      "at": "2026-11-07T15:30:31+00:00",
+      "error": null
+    }
   }
 }
