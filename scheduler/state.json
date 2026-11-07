@@ -1298,5 +1298,21 @@
       "at": "2026-11-07T08:45:31+00:00",
       "error": null
     }
+  },
+  "2026-11-07-smart-led-bottle": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143170129382754",
+      "url": "https://www.facebook.com/1155560334313168_122143170129382754",
+      "at": "2026-11-07T10:00:16+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18083398793364112",
+      "url": "https://www.instagram.com/p/Dfb6seiDXm8/",
+      "at": "2026-11-07T10:00:33+00:00",
+      "error": null
+    }
   }
 }
