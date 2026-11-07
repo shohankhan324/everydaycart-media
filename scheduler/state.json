@@ -1362,5 +1362,21 @@
       "at": "2026-11-07T13:30:31+00:00",
       "error": null
     }
+  },
+  "2026-11-07-automatic-umbrella": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143209555382754",
+      "url": "https://www.facebook.com/1155560334313168_122143209555382754",
+      "at": "2026-11-07T14:30:18+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17944104927365849",
+      "url": "https://www.instagram.com/p/DfcZmNhlw21/",
+      "at": "2026-11-07T14:30:29+00:00",
+      "error": null
+    }
   }
 }
