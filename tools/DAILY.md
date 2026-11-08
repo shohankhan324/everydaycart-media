@@ -1,7 +1,8 @@
 # Everyday Cart daily posting runbook
 
 The owner (Engr Md Shohan Khan) wants Everyday Cart's Facebook Page and Instagram (@everydaycart.bd) to get
-**8 to 10 image posts every day, plus 2 or 3 Reels on some days (about every other day)**, prepared and scheduled
+**4 to 5 high-quality image posts plus 1 Reel every day** (reduced from 8 to 10 on 8 Nov 2026 because too many posts a day
+were splitting reach; fewer, more attractive posts reach more people), prepared and scheduled
 automatically without waiting for his approval. Posts publish themselves through `scheduler/` (GitHub Actions + Meta
 Graph API): adding entries to `scheduler/queue.json` and pushing to `main` is all that is needed.
 
@@ -35,7 +36,7 @@ Graph API): adding entries to `scheduler/queue.json` and pushing to `main` is al
 
 ## Daily procedure
 
-1. `git pull`. Check `scheduler/queue.json` for entries already dated today; if today already has 8+ posts, stop.
+1. `git pull`. Check `scheduler/queue.json` for entries already dated today; if today already has 5+ posts, stop.
 2. Refresh product data (sync workflow above). Pick products **not featured in the last 2 to 3 days** (check queue ids),
    mixing categories: gadgets (earbuds, watches, speakers, neckband), thermal bottles, baby care, home and gifts.
    One or two collection posts (several products in one image) per day are good.
@@ -46,11 +47,12 @@ Graph API): adding entries to `scheduler/queue.json` and pushing to `main` is al
    set 1 = `render_flat` A/B/C, set 2 = `render_styles` D/E/F, set 3 = `render_styles3` G/H. Rotate so today differs
    from yesterday; log it in `posts/style_log.json`. Add a new set when the owner may be tired of these.
    Output to `posts/batch-YYYY-MM-DD/`. Render, then view a contact sheet and fix any overflow, tiny product or clash.
-5. Reels (about every other day, 2 or 3): reuse and vary the engines in `tools/reels/` (`reels9.py`: guess the price,
+5. Reels (1 every day): reuse and vary the engines in `tools/reels/` (`reels9.py`: guess the price,
    this or that, Bangla POV, unboxing, under 1,000, gift guide, top 5, good night; `anim.py`: day story, cart fill,
    product drop, Bangla winter). Change products, colours and hooks every time. Bangla text uses `TB()` (Hind Siliguri).
    1080x1920, 30 fps, 10 to 25 s, music muxed. Check sample frames before queueing. Save to `videos/YYYY-MM-DD/`.
-6. Schedule from about 11:00 to 21:30 Dhaka time (+06:00), roughly every 75 to 90 minutes, alternating categories,
+6. Schedule at peak times, Dhaka time (+06:00): about 11:30, 13:30, 16:30, 18:30 (Reel), 20:00 and 21:30 (skip one
+   image slot on 4-post days), alternating categories,
    Reels between image posts. Queue entry: `{"id": "YYYY-MM-DD-slug", "time": "YYYY-MM-DDTHH:MM:00+06:00",
    "type": "image"|"carousel"|"reel", "media": ["repo/path"], "caption": "...", "networks": ["facebook","instagram"]}`
    plus `"cover_ms"` for Reels. If the run starts late, start the first slot at least 20 minutes from now.
