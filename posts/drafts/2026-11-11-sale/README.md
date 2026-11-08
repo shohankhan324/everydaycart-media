@@ -1,6 +1,6 @@
 # 11.11 Shopping Festival offer (DRAFT, not queued)
 
-Status: waiting for owner approval. Do not add to scheduler/queue.json until the coupon exists on the website.
+Status: APPROVED by owner on 8 Nov 2026. Queued in scheduler/queue.json (9 Nov 19:00, 10 Nov 10:00, 11 Nov 11:11).
 
 ## Suggested offer
 - Extra 11% off the current sale price with coupon code **EC1111**
