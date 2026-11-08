@@ -1474,5 +1474,21 @@
       "at": "2026-11-08T10:00:27+00:00",
       "error": null
     }
+  },
+  "2026-11-08-little-ones-essentials": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143361235382754",
+      "url": "https://www.facebook.com/1155560334313168_122143361235382754",
+      "at": "2026-11-08T11:00:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17953156758053456",
+      "url": "https://www.instagram.com/p/DfemXKil48j/",
+      "at": "2026-11-08T11:00:31+00:00",
+      "error": null
+    }
   }
 }
