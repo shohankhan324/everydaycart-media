@@ -1538,5 +1538,21 @@
       "at": "2026-11-08T14:30:25+00:00",
       "error": null
     }
+  },
+  "2026-11-08-elephant-plush-toy": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143402203382754",
+      "url": "https://www.facebook.com/1155560334313168_122143402203382754",
+      "at": "2026-11-08T15:30:18+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18439015393197111",
+      "url": "https://www.instagram.com/p/DffFQlVk1EO/",
+      "at": "2026-11-08T15:30:27+00:00",
+      "error": null
+    }
   }
 }
