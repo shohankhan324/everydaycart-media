@@ -97,8 +97,9 @@ def template_e(p):
     img = rf.place(img, p["img"], 540, 670, p.get("maxw", 560), p.get("maxh", 500)); d = ImageDraw.Draw(img)
     # vertical price ribbon on the left
     has_old = p["regular"] > p["price"]
-    d.rectangle(P(64, 400, 236, 640), fill=ROSE)
-    d.polygon([P(64, 640), P(150, 600), P(236, 640), P(236, 680), P(150, 640), P(64, 680)], fill=ROSE)
+    rib = p.get("ribbon", ROSE)
+    d.rectangle(P(64, 400, 236, 640), fill=rib)
+    d.polygon([P(64, 640), P(150, 600), P(236, 640), P(236, 680), P(150, 640), P(64, 680)], fill=rib)
     lf = f("Poppins-Medium.ttf", 21); lt = p.get("label", "PRICE"); lw_ = d.textlength(lt, font=lf) / S
     d.text(P(150 - lw_ / 2, 430), lt, font=lf, fill=(255, 228, 224))
     pf = fit(d, tk(p["price"]), "Poppins-Bold.ttf", 40, 150); pw = d.textlength(tk(p["price"]), font=pf) / S
