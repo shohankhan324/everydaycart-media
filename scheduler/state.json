@@ -1490,5 +1490,21 @@
       "at": "2026-11-08T11:00:31+00:00",
       "error": null
     }
+  },
+  "2026-11-08-reel-winter-tea-thermals": {
+    "facebook": {
+      "status": "published",
+      "id": "1774248598037214",
+      "url": "https://www.facebook.com/reel/1774248598037214",
+      "at": "2026-11-08T12:00:25+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17964023193011190",
+      "url": "https://www.instagram.com/reel/DfetW1Xhegk/",
+      "at": "2026-11-08T12:02:17+00:00",
+      "error": null
+    }
   }
 }
