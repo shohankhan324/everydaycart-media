@@ -14,8 +14,17 @@ Graph API): adding entries to `scheduler/queue.json` and pushing to `main` is al
 - **Prices exactly as on the store.** Run the `sync-products.yml` workflow first (`gh workflow run sync-products.yml`,
   wait for it, `git pull`). Show a regular (struck) price only when it is known from earlier captions or the store.
 - **Captions**: hook line with an emoji, product name, ✔️ feature lines, `💰 Price: X৳ (regular Y৳)`, then exactly
-  `⚡ Limited stock available!\n🛒 Order now: everydaycart.online\n📩 Or inbox us to place your order`, then hashtags ending
-  `#OnlineShoppingBD #Dhaka #Bangladesh`. **No em dashes or en dashes anywhere** (assert this in code).
+  `⚡ Limited stock available!\n🛒 Order now: everydaycart.online\n📩 Or inbox us to place your order`, then the hashtag
+  line. **No em dashes or en dashes anywhere** (assert this in code).
+- **Hashtags: exactly 5 per post, from `tools/hashtags.py`** (`pick(category, brand=..., seed=post_id)` then
+  `retag(caption, tags)`; assert `len(re.findall(r'#\w+', caption)) == 5`). Instagram caps captions at 5 hashtags since
+  Dec 2025 and posts with more lose reach; Facebook also works best with 3 to 5. Mix: 1 BD shopping tag + 1 BD category
+  tag + 2 product/brand tags people search + 1 location tag. Rotate (seeded by post id) so no two posts share the same set.
+  No #EverydayCart, #Reels, #Explore or other generic tags. For a product type not in the library, add it to `CAT`.
+- **Reach**: the first line is what people see before "more", so make it a keyword-rich hook naming the product type
+  (e.g. "🎧 Wireless earbuds under 1,000৳ with clear calls"), not just a generic line. Add one short, natural Bangla line
+  that uses the Bangla search word for the product (e.g. ইয়ারবাড, স্মার্ট ওয়াচ, ফ্লাস্ক, বেবি ফিডার). Ask a question
+  or give a reason to comment on some posts. Reels get the most reach: hook in the first 1 to 2 seconds.
 - Never invent features, claims (e.g. hours a bottle keeps heat), reviews, discounts or offers. Use only what the store
   listing or earlier captions in `scheduler/queue.json` say. Offers, discounts, coupons and sale posts (e.g. the 11.11 draft in
   `posts/drafts/`) need the owner's approval: never queue them yourself.
