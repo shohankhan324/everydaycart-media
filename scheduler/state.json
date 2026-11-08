@@ -1426,5 +1426,21 @@
       "at": "2026-11-08T06:15:25+00:00",
       "error": null
     }
+  },
+  "2026-11-08-reel-earbuds-face-off": {
+    "facebook": {
+      "status": "published",
+      "id": "1003170512121148",
+      "url": "https://www.facebook.com/reel/1003170512121148",
+      "at": "2026-11-08T07:30:26+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18647903950021111",
+      "url": "https://www.instagram.com/reel/DfeOWQuhXpD/",
+      "at": "2026-11-08T07:30:56+00:00",
+      "error": null
+    }
   }
 }
