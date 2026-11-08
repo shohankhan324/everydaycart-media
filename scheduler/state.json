@@ -1442,5 +1442,21 @@
       "at": "2026-11-08T07:30:56+00:00",
       "error": null
     }
+  },
+  "2026-11-08-minitree-duckbill-mumpot": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143341603382754",
+      "url": "https://www.facebook.com/1155560334313168_122143341603382754",
+      "at": "2026-11-08T08:45:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18113901656336153",
+      "url": "https://www.instagram.com/p/DfeW6X2DW-Y/",
+      "at": "2026-11-08T08:45:27+00:00",
+      "error": null
+    }
   }
 }
