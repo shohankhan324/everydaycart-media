@@ -1522,5 +1522,21 @@
       "at": "2026-11-08T13:15:37+00:00",
       "error": null
     }
+  },
+  "2026-11-08-silent-alarm-clock": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143393755382754",
+      "url": "https://www.facebook.com/1155560334313168_122143393755382754",
+      "at": "2026-11-08T14:30:18+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18129361795847294",
+      "url": "https://www.instagram.com/p/Dfe-ZLlGv8g/",
+      "at": "2026-11-08T14:30:25+00:00",
+      "error": null
+    }
   }
 }
