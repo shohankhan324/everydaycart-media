@@ -145,8 +145,56 @@ def offer_11_11():
     offer_grid("02_11_11_deals", items, 11, "EC1111", "10 to 12 Nov")
 
 
+BD_GREEN = (0, 106, 78); BD_RED = (244, 42, 65)
+
+
+def bd_flag(img, x, y, w, wave=0.0):
+    """Flat Bangladesh flag (10:6, red disc offset toward hoist) on a slim pole."""
+    d = ImageDraw.Draw(img); h = w * 0.6
+    d.rounded_rectangle(P(x - 14, y - 26, x - 2, y + h + 110), radius=6 * S, fill=(150, 140, 132))
+    d.rounded_rectangle(P(x - 44, y + h + 104, x + 28, y + h + 122), radius=9 * S, fill=(150, 140, 132))
+    d.ellipse(P(x - 20, y - 40, x + 4, y - 16), fill=GOLD)
+    d.rectangle(P(x, y, x + w, y + h), fill=BD_GREEN)
+    r = w * 0.2; cx = x + w * 0.45; cy = y + h / 2
+    d.ellipse(P(cx - r, cy - r, cx + r, cy + r), fill=BD_RED)
+    return img
+
+
+def armed_forces_day(out):
+    img = Image.new("RGBA", (W, H), CREAM + (255,)); d = ImageDraw.Draw(img)
+    d.rectangle(P(0, 0, W0, 430), fill=SAGE)
+    d.ellipse(P(-220, 300, W0 + 220, 560), fill=SAGE)
+    lg = load_logo(170)
+    d.rounded_rectangle(P(36, 32, 36 + lg.width / S + 24, 32 + lg.height / S + 20), radius=16 * S, fill=(255, 255, 255))
+    img.alpha_composite(lg, (48 * S, 42 * S)); d = ImageDraw.Draw(img)
+    centered(d, 175, "21 November", "Poppins-Medium.ttf", 36, 900, SAGE_L)
+    centered(d, 230, "Armed Forces Day", "Poppins-Bold.ttf", 84, 940, "white")
+    centered(d, 347, "Sashastra Bahini Dibosh", "Poppins-Medium.ttf", 32, 900, (232, 240, 228))
+    # flag with three service bands below (Army, Navy, Air Force), all flat
+    img = bd_flag(img, 382, 630, 330); d = ImageDraw.Draw(img)
+    labels = [("Army", (88, 110, 80)), ("Navy", (44, 62, 102)), ("Air Force", (92, 150, 196))]
+    bw, g = 250, 26; sx = 540 - (3 * bw + 2 * g) / 2
+    for i, (t, c) in enumerate(labels):
+        x = sx + i * (bw + g)
+        d.rounded_rectangle(P(x, 960, x + bw, 1024), radius=32 * S, fill=c)
+        ft = f("Poppins-SemiBold.ttf", 28) if os.path.exists(rf.G + "Poppins-SemiBold.ttf") else f("Poppins-Bold.ttf", 28)
+        tw = d.textlength(t, font=ft) / S; d.text(P(x + bw / 2 - tw / 2, 974), t, font=ft, fill="white")
+    for (x, y, r) in [(170, 650, 14), (910, 620, 12), (140, 860, 9), (940, 860, 10)]:
+        sparkle(d, x, y, r, GOLD)
+    y = 1068
+    for l in ["Saluting the courage, sacrifice and service", "of our Army, Navy and Air Force."]:
+        centered(d, y, l, "Poppins-Regular.ttf", 32, 960, INK); y += 48
+    centered(d, y + 14, "With respect from Everyday Cart", "Poppins-Medium.ttf", 26, 900, ROSE)
+    d.rectangle(P(0, 1250, W0, H0), fill=(255, 255, 255))
+    d.line(P(0, 1250, W0, 1250), fill=ROSE_L, width=3 * S)
+    uf = f("Poppins-Medium.ttf", 25); u = "everydaycart.online"; uw = d.textlength(u, font=uf) / S
+    d.text(P(540 - uw / 2, 1283), u, font=uf, fill=ROSE_D)
+    return rf.finish(img, out)
+
+
 if __name__ == "__main__":
     rf.OUTDIR = sys.argv[1] if len(sys.argv) > 1 else rf.OUTDIR
     os.makedirs(rf.OUTDIR, exist_ok=True)
     if len(sys.argv) > 2 and sys.argv[2] == "1111": offer_11_11()
-    else: print("usage: render_greeting.py OUTDIR 1111")
+    elif len(sys.argv) > 2 and sys.argv[2] == "afd": armed_forces_day("2026-11-21-armed-forces-day")
+    else: print("usage: render_greeting.py OUTDIR 1111|afd")

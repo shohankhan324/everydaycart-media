@@ -1283,5 +1283,18 @@
       "facebook",
       "instagram"
     ]
+  },
+  {
+    "id": "2026-11-21-armed-forces-day",
+    "time": "2026-11-21T09:00:00+06:00",
+    "type": "image",
+    "media": [
+      "posts/greetings/2026-11-21-armed-forces-day.jpg"
+    ],
+    "caption": "🇧🇩 Happy Armed Forces Day!\n\nOn 21 November, we salute the courage, sacrifice and service of the Bangladesh Army, Navy and Air Force. Thank you for standing guard for our nation, in times of peace and in times of need.\n\nWith respect and gratitude,\nEveryday Cart 💚\neverydaycart.online\n\n#ArmedForcesDay #SashastraBahiniDibosh #21November #Bangladesh #BangladeshArmy #BangladeshNavy #BangladeshAirForce #EverydayCart",
+    "networks": [
+      "facebook",
+      "instagram"
+    ]
   }
 ]
