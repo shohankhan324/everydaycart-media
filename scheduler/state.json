@@ -1586,5 +1586,21 @@
       "at": "2026-11-09T07:30:34+00:00",
       "error": null
     }
+  },
+  "2026-11-09-1111-teaser": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143571367382754",
+      "url": "https://www.facebook.com/1155560334313168_122143571367382754",
+      "at": "2026-11-09T13:00:23+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18105070283642594",
+      "url": "https://www.instagram.com/p/DfhY5frm6X9/",
+      "at": "2026-11-09T13:00:32+00:00",
+      "error": null
+    }
   }
 }
