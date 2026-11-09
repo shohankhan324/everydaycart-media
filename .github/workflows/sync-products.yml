@@ -29,6 +29,7 @@ jobs:
             jq -s '.[0] + .[1]' products/all.json /tmp/p.json > /tmp/m.json && mv /tmp/m.json products/all.json
             page=$((page+1))
           done
+          if [ "$(jq length products/all.json)" -eq 0 ]; then echo "Store API returned no products; keeping the previous products.json"; rm products/all.json; exit 1; fi
           jq '[.[] | {id, name, slug, permalink, is_in_stock, prices: {price: .prices.price, regular: .prices.regular_price, minor: .prices.currency_minor_unit}, categories: [.categories[].name], short_description, images: [.images[].src]}]' products/all.json > products/products.json
           jq -r '.[] | select(.is_in_stock) | .slug as $s | .images | to_entries[] | select(.key < 3) | "\($s)\t\(.key)\t\(.value)"' products/products.json | while IFS=$'\t' read -r slug idx url; do
             ext="${url##*.}"; ext="${ext%%\?*}"

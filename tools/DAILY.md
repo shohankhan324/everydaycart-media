@@ -44,7 +44,7 @@ Graph API): adding entries to `scheduler/queue.json` and pushing to `main` is al
    `tools/prep_hq.py` (rembg `isnet-general-use`; `big()` for small photos) and run it. Inspect the cutout on a dark
    background before using it.
 4. Images: write `tools/batch_YYYY_MM_DD.py` following the latest one. Style sets:
-   set 1 = `render_flat` A/B/C, set 2 = `render_styles` D/E/F, set 3 = `render_styles3` G/H. Rotate so today differs
+   set 1 = `render_flat` A/B/C, set 2 = `render_styles` D/E/F, set 3 = `render_styles3` G/H, set 4 = `render_styles4` I/J. Rotate so today differs
    from yesterday; log it in `posts/style_log.json`. Add a new set when the owner may be tired of these.
    Output to `posts/batch-YYYY-MM-DD/`. Render, then view a contact sheet and fix any overflow, tiny product or clash.
 5. Reels (1 every day): reuse and vary the engines in `tools/reels/` (`reels9.py`: guess the price,
