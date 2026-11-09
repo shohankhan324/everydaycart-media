@@ -12,7 +12,7 @@ POSTS = [
                sub="Bluetooth calling  •  1.9 inch HD display", feats=["100+ Sports Modes", "IP68", "300mAh"],
                price=1350, regular=1540, bg=(232, 236, 242), col=(38, 52, 84), stampc=(222, 98, 64), maxw=470, maxh=470)),
     ("J", dict(out="02_minitree_tritan_bottle", img=HQ + "08.png", tag="BABY  •  3+ MONTHS", title="Minitree Tritan Baby Bottle",
-               feats=["BPA Free Tritan", "210 ml (7 oz)", "Soft Nipple", "Easy Grip Handles"], price=450, regular=650,
+               feats=["BPA Free Tritan", "210 ml (7 oz)", "Soft Nipple", "Easy Grip Handles"], price=450, regular=600,
                bg=(122, 84, 140), stage=(246, 236, 244), acc=(226, 108, 140), maxw=760, maxh=470, cy=470)),
     ("I", dict(out="03_forkan_trolley_luggage", img=HQ + "05.png", word="TRAVEL", tag="TRAVEL  •  20 & 24 INCH", title="FORKAN Trolley Luggage",
                sub="Premium hard shell  •  Ask for sizes and colours", feats=["Hard Shell", "360° Wheels", "Lightweight"],
