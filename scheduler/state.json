@@ -1570,5 +1570,21 @@
       "at": "2026-11-09T05:30:29+00:00",
       "error": null
     }
+  },
+  "2026-11-09-minitree-tritan-bottle": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143516413382754",
+      "url": "https://www.facebook.com/1155560334313168_122143516413382754",
+      "at": "2026-11-09T07:30:19+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18127418533916118",
+      "url": "https://www.instagram.com/p/DfgzH-OmCbt/",
+      "at": "2026-11-09T07:30:34+00:00",
+      "error": null
+    }
   }
 }
