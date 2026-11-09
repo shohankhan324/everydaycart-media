@@ -105,11 +105,11 @@ def template_j(p):
     ft, lines = wrap(d, p["title"], "Poppins-Bold.ttf", 52, 600, 2)
     y = 872
     for l in lines: d.text(P(110, y), l, font=ft, fill=INK); y += ft.size / S * 1.15
-    y += 18
-    ff = f("Poppins-Medium.ttf", 25)
+    y += 12
+    step = min(52, (1180 - y) / 4)
     for t in p["feats"][:4]:
         check_icon(d, 126, y + 17, 15, acc, (255, 255, 255))
-        d.text(P(156, y), t, font=fit(d, t, "Poppins-Medium.ttf", 25, 470), fill=INK); y += 52
+        d.text(P(156, y), t, font=fit(d, t, "Poppins-Medium.ttf", 25, 470), fill=INK); y += step
     # price column
     d.line(P(700, 880, 700, 1150), fill=(226, 226, 230), width=2 * S)
     lf = f("Poppins-Medium.ttf", 22); d.text(P(740, 900), p.get("label", "PRICE"), font=lf, fill=MUTE)
