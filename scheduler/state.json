@@ -1682,5 +1682,21 @@
       "at": "2026-11-10T14:00:42+00:00",
       "error": null
     }
+  },
+  "2026-11-10-steel-water-pot": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143805259382754",
+      "url": "https://www.facebook.com/1155560334313168_122143805259382754",
+      "at": "2026-11-10T15:30:27+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18113202572625184",
+      "url": "https://www.instagram.com/p/DfkO3fYjdeM/",
+      "at": "2026-11-10T15:30:40+00:00",
+      "error": null
+    }
   }
 }
