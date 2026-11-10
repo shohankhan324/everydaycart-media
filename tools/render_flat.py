@@ -20,7 +20,11 @@ def P(*v): return tuple(int(round(x * S)) for x in v)
 def tk(n): return f"Tk {n:,}"
 
 def load_logo(width):
-    lg = Image.open(LOGO).convert("RGB"); a = np.asarray(lg).astype(int)
+    lg = Image.open(LOGO)
+    if lg.mode == "RGBA":   # new wordmark logo (from 10 Nov 2026): transparent PNG, wider so it stays readable
+        lg = lg.crop(lg.getbbox()); width = width * (1.5 if lg.width / lg.height > 4 else 1)
+        w = int(width * S); return lg.resize((w, int(lg.height * w / lg.width)), Image.LANCZOS)
+    lg = lg.convert("RGB"); a = np.asarray(lg).astype(int)
     cream = (np.abs(a - np.array([253, 250, 245])).max(axis=2) <= 12)
     lab, _ = ndimage.label(cream)
     b = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))) - {0}

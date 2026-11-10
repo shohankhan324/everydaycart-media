@@ -9,7 +9,8 @@ Graph API): adding entries to `scheduler/queue.json` and pushing to `main` is al
 ## Hard rules (from the owner)
 
 - **Flat designs only**, no 3D. Top-notch, clean finishing: look at every rendered image close up before queueing.
-- **Logo on every post and Reel**, small, in a corner (the toolkit templates already do this).
+- **Logo on every post and Reel**, small, in a corner (the toolkit templates already do this). Since 10 Nov 2026 the logo is
+  the "everydaycart" wordmark in `tools/assets/logo.png`; never use the old bag logo (`logo_old.png`).
 - **A different design every day**: never reuse the previous day's style set (see `posts/style_log.json`).
 - **Only in-stock products** (`is_in_stock` true in `products/products.json`), and only colours that are in stock.
 - **Prices exactly as on the store.** Run the `sync-products.yml` workflow first (`gh workflow run sync-products.yml`,

@@ -52,7 +52,8 @@ SCENES = [
 ]
 INTRO_D = 4 * B; SCENE_D = 5 * B; END_D = 7 * B
 
-LOGO = load_logo(150); LOGO = LOGO.resize((150, int(LOGO.height * 150 / LOGO.width)), Image.LANCZOS)
+LOGO = load_logo(150); _LW = 225 if LOGO.width / LOGO.height > 4 else 150   # wordmark logo is wider
+LOGO = LOGO.resize((_LW, int(LOGO.height * _LW / LOGO.width)), Image.LANCZOS)
 def logo_card():
     pad = 16; c = Image.new("RGBA", (LOGO.width + 2 * pad, LOGO.height + 2 * pad), (0, 0, 0, 0))
     ImageDraw.Draw(c).rounded_rectangle((0, 0, c.width - 1, c.height - 1), radius=22, fill=(255, 255, 255, 240))
