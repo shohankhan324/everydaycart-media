@@ -1634,5 +1634,21 @@
       "at": "2026-11-10T07:30:28+00:00",
       "error": null
     }
+  },
+  "2026-11-10-kodomo-oral-care": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143761807382754",
+      "url": "https://www.facebook.com/1155560334313168_122143761807382754",
+      "at": "2026-11-10T10:30:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17913297156487662",
+      "url": "https://www.instagram.com/p/DfjshkFFwCk/",
+      "at": "2026-11-10T10:30:34+00:00",
+      "error": null
+    }
   }
 }
