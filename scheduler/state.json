@@ -1666,5 +1666,21 @@
       "at": "2026-11-10T12:30:56+00:00",
       "error": null
     }
+  },
+  "2026-11-10-316-thermal-bottle": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143792773382754",
+      "url": "https://www.facebook.com/1155560334313168_122143792773382754",
+      "at": "2026-11-10T14:00:29+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17956698903288220",
+      "url": "https://www.instagram.com/p/DfkEkhOl0RS/",
+      "at": "2026-11-10T14:00:42+00:00",
+      "error": null
+    }
   }
 }
