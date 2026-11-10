@@ -1602,5 +1602,21 @@
       "at": "2026-11-09T13:00:32+00:00",
       "error": null
     }
+  },
+  "2026-11-10-1111-deals-live": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143708851382754",
+      "url": "https://www.facebook.com/1155560334313168_122143708851382754",
+      "at": "2026-11-10T04:00:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18434867110151513",
+      "url": "https://www.instagram.com/p/Dfi_5KLDpc_/",
+      "at": "2026-11-10T04:00:31+00:00",
+      "error": null
+    }
   }
 }
