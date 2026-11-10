@@ -4,7 +4,8 @@
     "1": "render_flat A split panel, B colour card, C collection grid",
     "2": "render_styles D arch poster, E scalloped header + feature tiles, F list menu",
     "3": "render_styles3 G slanted colour block, H framed label card",
-    "4": "render_styles4 I big-word poster (giant tinted word, scalloped price stamp), J ticket card (perforated ticket, spec stub)"
+    "4": "render_styles4 I big-word poster (giant tinted word, scalloped price stamp), J ticket card (perforated ticket, spec stub)",
+    "5": "render_styles5 K bento grid (product tile, price tile, two stat tiles, title bar), L headline pop (two-tone headline, flat blob with offset ring, speech-bubble price, white info panel)"
   },
   "log": {
     "2026-10-30": "1",
@@ -17,6 +18,7 @@
     "2026-11-06": "1 + 3 reels",
     "2026-11-07": "3 (new colourways, struck regular price)",
     "2026-11-08": "2 (new colourways: teal, navy, terracotta, plum; matching E price ribbon) + 2 reels",
-    "2026-11-09": "4 (NEW set: I big-word poster, J ticket card) + 1 reel"
+    "2026-11-09": "4 (NEW set: I big-word poster, J ticket card) + 1 reel",
+    "2026-11-10": "5 (NEW set: K bento grid, L headline pop) + 1 reel (Proove guess the price, violet + lime)"
   }
 }

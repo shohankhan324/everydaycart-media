@@ -188,6 +188,9 @@ def job(key):
         m = ndimage.binary_fill_holes(ndimage.binary_closing(m, structure=np.ones((9, 9))))
         m = ndimage.binary_dilation(m, iterations=1)
         return refine(img, keep_largest(a * ndimage.gaussian_filter(m.astype(float), 0.8), frac=0.2), erode=1)
+    if key == "32":   # stainless steel water pot: blue jug from the lifestyle shot (lid off), 2x
+        im = src("stainless-steel-water-pot-2").crop((112, 236, 432, 692)); img = im.resize((im.width * 2, im.height * 2), Image.LANCZOS)
+        return refine(img, keep_largest(matte(img, "u2net")), erode=1)   # u2net keeps the handle; isnet drops it
 
 if __name__ == "__main__":
     keys = sys.argv[1:] or [f"{i:02d}" for i in range(1, 23)]

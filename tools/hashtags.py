@@ -35,6 +35,7 @@ CAT = {
     "toys":       (["#ToysBD", "#GiftShopBD"], ["#SoftToys", "#TeddyBear", "#KidsGift", "#GiftIdeas"]),
     "gift":       (["#GiftShopBD", "#GiftBD"], ["#GiftIdeas", "#GiftForHer", "#GiftForHim", "#BirthdayGift"]),
     "home":       (["#HomeEssentialsBD", "#KitchenBD"], ["#HomeEssentials", "#KitchenEssentials", "#HomeGadgets", "#SmartHome"]),
+    "kitchen":    (["#KitchenBD", "#HomeEssentialsBD"], ["#KitchenEssentials", "#HomeEssentials", "#Thermos", "#KitchenTools"]),
     "travel":     (["#TravelBD", "#HomeEssentialsBD"], ["#TrolleyBag", "#Luggage", "#TravelEssentials"]),
     "fan":        (["#GadgetBD", "#SummerEssentialsBD"], ["#PortableFan", "#MiniFan", "#RechargeableFan"]),
     "massage":    (["#GadgetBD", "#HealthGadgetBD"], ["#MassageGun", "#Fitness", "#GymLife"]),
