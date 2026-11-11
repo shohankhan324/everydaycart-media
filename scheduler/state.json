@@ -1698,5 +1698,21 @@
       "at": "2026-11-10T15:30:40+00:00",
       "error": null
     }
+  },
+  "2026-11-11-1111-deals-repost": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143902837382754",
+      "url": "https://www.facebook.com/1155560334313168_122143902837382754",
+      "at": "2026-11-11T05:11:25+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17984921766130412",
+      "url": "https://www.instagram.com/p/Dfls0WAF3yH/",
+      "at": "2026-11-11T05:11:38+00:00",
+      "error": null
+    }
   }
 }
