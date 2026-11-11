@@ -1778,5 +1778,21 @@
       "at": "2026-11-11T14:00:31+00:00",
       "error": null
     }
+  },
+  "2026-11-11-big-teddy-bear": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143993101382754",
+      "url": "https://www.facebook.com/1155560334313168_122143993101382754",
+      "at": "2026-11-11T15:30:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18346889470285349",
+      "url": "https://www.instagram.com/p/Dfmzp16GEhS/",
+      "at": "2026-11-11T15:30:38+00:00",
+      "error": null
+    }
   }
 }
