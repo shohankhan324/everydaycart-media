@@ -1730,5 +1730,21 @@
       "at": "2026-11-11T07:30:35+00:00",
       "error": null
     }
+  },
+  "2026-11-11-baby-care-kit": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143947321382754",
+      "url": "https://www.facebook.com/1155560334313168_122143947321382754",
+      "at": "2026-11-11T10:30:27+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17916668301539098",
+      "url": "https://www.instagram.com/p/DfmRVBdmyFs/",
+      "at": "2026-11-11T10:30:39+00:00",
+      "error": null
+    }
   }
 }
