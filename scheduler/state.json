@@ -1746,5 +1746,21 @@
       "at": "2026-11-11T10:30:39+00:00",
       "error": null
     }
+  },
+  "2026-11-11-reel-awei-t88-budget-check": {
+    "facebook": {
+      "status": "published",
+      "id": "1585875596624477",
+      "url": "https://www.facebook.com/reel/1585875596624477",
+      "at": "2026-11-11T12:30:26+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18021457349959327",
+      "url": "https://www.instagram.com/reel/DfmfERLTnvu/",
+      "at": "2026-11-11T12:31:00+00:00",
+      "error": null
+    }
   }
 }
