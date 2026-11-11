@@ -1714,5 +1714,21 @@
       "at": "2026-11-11T05:11:38+00:00",
       "error": null
     }
+  },
+  "2026-11-11-oraimo-necklace-lite": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122143920543382754",
+      "url": "https://www.facebook.com/1155560334313168_122143920543382754",
+      "at": "2026-11-11T07:30:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18143678947625421",
+      "url": "https://www.instagram.com/p/Dfl8uGWl3_x/",
+      "at": "2026-11-11T07:30:35+00:00",
+      "error": null
+    }
   }
 }
