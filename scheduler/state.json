@@ -1810,5 +1810,21 @@
       "at": "2026-11-12T05:30:35+00:00",
       "error": null
     }
+  },
+  "2026-11-12-winter-thermal-bottles": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144122485382754",
+      "url": "https://www.facebook.com/1155560334313168_122144122485382754",
+      "at": "2026-11-12T07:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18134086285685875",
+      "url": "https://www.instagram.com/p/DfohhLGI1Sm/",
+      "at": "2026-11-12T07:30:34+00:00",
+      "error": null
+    }
   }
 }
