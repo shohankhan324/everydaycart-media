@@ -1826,5 +1826,21 @@
       "at": "2026-11-12T07:30:34+00:00",
       "error": null
     }
+  },
+  "2026-11-12-wide-neck-baby-feeder": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144148513382754",
+      "url": "https://www.facebook.com/1155560334313168_122144148513382754",
+      "at": "2026-11-12T10:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18027090821941918",
+      "url": "https://www.instagram.com/p/Dfo2HcDFA16/",
+      "at": "2026-11-12T10:30:36+00:00",
+      "error": null
+    }
   }
 }
