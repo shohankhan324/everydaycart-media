@@ -1794,5 +1794,21 @@
       "at": "2026-11-11T15:30:38+00:00",
       "error": null
     }
+  },
+  "2026-11-12-oraimo-watch-5-lite": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144107317382754",
+      "url": "https://www.facebook.com/1155560334313168_122144107317382754",
+      "at": "2026-11-12T05:30:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18004789322806330",
+      "url": "https://www.instagram.com/p/DfoTyARG3Mt/",
+      "at": "2026-11-12T05:30:35+00:00",
+      "error": null
+    }
   }
 }
