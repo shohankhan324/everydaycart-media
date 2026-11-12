@@ -1842,5 +1842,21 @@
       "at": "2026-11-12T10:30:36+00:00",
       "error": null
     }
+  },
+  "2026-11-12-reel-oraimo-spacebuds-lite-specs": {
+    "facebook": {
+      "status": "published",
+      "id": "1641629600775267",
+      "url": "https://www.facebook.com/reel/1641629600775267",
+      "at": "2026-11-12T12:30:39+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18081411440725003",
+      "url": "https://www.instagram.com/reel/DfpD9NcSvxH/",
+      "at": "2026-11-12T12:31:55+00:00",
+      "error": null
+    }
   }
 }
