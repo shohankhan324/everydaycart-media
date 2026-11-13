@@ -1906,5 +1906,21 @@
       "at": "2026-11-13T05:30:30+00:00",
       "error": null
     }
+  },
+  "2026-11-13-bluetooth-speakers-duo": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144314089382754",
+      "url": "https://www.facebook.com/1155560334313168_122144314089382754",
+      "at": "2026-11-13T07:30:23+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18121007288278006",
+      "url": "https://www.instagram.com/p/DfrGT5Xo4Mw/",
+      "at": "2026-11-13T07:30:35+00:00",
+      "error": null
+    }
   }
 }
