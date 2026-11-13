@@ -40,6 +40,7 @@ CAT = {
     "travel":     (["#TravelBD", "#HomeEssentialsBD"], ["#TrolleyBag", "#Luggage", "#TravelEssentials"]),
     "fan":        (["#GadgetBD", "#SummerEssentialsBD"], ["#PortableFan", "#MiniFan", "#RechargeableFan"]),
     "clock":      (["#HomeEssentialsBD", "#HomeDecorBD"], ["#AlarmClock", "#HomeDecor", "#BedroomDecor", "#TableClock"]),
+    "bbq":        (["#WinterEssentialsBD", "#HomeEssentialsBD"], ["#BBQGrill", "#BBQ", "#RooftopBBQ", "#Picnic"]),
     "massage":    (["#GadgetBD", "#HealthGadgetBD"], ["#MassageGun", "#Fitness", "#GymLife"]),
 }
 
