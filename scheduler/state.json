@@ -1986,5 +1986,21 @@
       "at": "2026-11-13T15:30:32+00:00",
       "error": null
     }
+  },
+  "2026-11-14-proove-intro-pro": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144498565382754",
+      "url": "https://www.facebook.com/1155560334313168_122144498565382754",
+      "at": "2026-11-14T05:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18068598107511942",
+      "url": "https://www.instagram.com/p/DftdYCVFGgZ/",
+      "at": "2026-11-14T05:30:36+00:00",
+      "error": null
+    }
   }
 }
