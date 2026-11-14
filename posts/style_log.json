@@ -8,7 +8,8 @@
     "5": "render_styles5 K bento grid (product tile, price tile, two stat tiles, title bar), L headline pop (two-tone headline, flat blob with offset ring, speech-bubble price, white info panel)",
     "6": "render_styles6 M orbit poster (product on flat concentric rings, round price sticker, Bangla pill, white bottom card with feature chips), N checklist note (graph paper, tilted photo card with tape, sticky-note price, ticked checklist, dark footer)",
     "7": "render_styles7 O spotlight stage (flat beam onto two-tone podium, hanging price tag, headline hook, numbered feature strip), P seam poster (product across colour/cream seam, giant tinted word, price pill on seam, 01/02/03 columns; collection mode with price chips)",
-    "8": "render_styles8 Q magazine cover (giant masthead word, product overlapping, numbered cover lines, round price sticker, white band with title + Bangla line), R sticker sheet (dotted pastel bg, product on die-cut circle, tilted feature stickers, tilted price sticker, Bangla tape strip; collection mode with a circle per product)"
+    "8": "render_styles8 Q magazine cover (giant masthead word, product overlapping, numbered cover lines, round price sticker, white band with title + Bangla line), R sticker sheet (dotted pastel bg, product on die-cut circle, tilted feature stickers, tilted price sticker, Bangla tape strip; collection mode with a circle per product)",
+    "9": "render_styles9 S order slip (bold colour poster, product on flat disc, tilted paper receipt with zigzag edge, ticked feature rows, TOTAL price, barcode; collection mode lists items on the slip), T app card (pastel bg, white shopping-app product card, tinted photo panel, hook bubble, carousel dots, feature chips, price + flat Add to cart button; collection mode with two product tiles)"
   },
   "log": {
     "2026-10-30": "1",
@@ -25,6 +26,7 @@
     "2026-11-10": "5 (NEW set: K bento grid, L headline pop) + 1 reel (Proove guess the price, violet + lime)",
     "2026-11-11": "6 (NEW set: M orbit poster, N checklist note; navy+amber, terracotta+cream, pink+mint, sky+pink) + 1 reel (Awei T88 budget checklist, teal + orange)",
     "2026-11-12": "7 (NEW set: O spotlight stage, P seam poster; teal+coral, berry, sky+navy, charcoal+lime, indigo+orange) + 1 reel (Oraimo SpaceBuds Lite spec counter, navy + mint)",
-    "2026-11-13": "8 (NEW set: Q magazine cover, R sticker sheet; navy+yellow, periwinkle+coral, sky+pink, blush+charcoal, charcoal+orange) + 1 reel (COLMI P81 phone in the bag POV, berry + sunshine yellow)"
+    "2026-11-13": "8 (NEW set: Q magazine cover, R sticker sheet; navy+yellow, periwinkle+coral, sky+pink, blush+charcoal, charcoal+orange) + 1 reel (COLMI P81 phone in the bag POV, berry + sunshine yellow)",
+    "2026-11-14": "9 (NEW set: S order slip, T app card; emerald+yellow, lavender+violet, teal+pink, sky+rose, butter+black) + 1 reel (Elephant plush bedtime buddy, indigo + peach)"
   }
 }
