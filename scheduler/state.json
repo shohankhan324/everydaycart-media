@@ -2018,5 +2018,21 @@
       "at": "2026-11-14T07:30:38+00:00",
       "error": null
     }
+  },
+  "2026-11-14-home-helpers-gloves-umbrella": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144537811382754",
+      "url": "https://www.facebook.com/1155560334313168_122144537811382754",
+      "at": "2026-11-14T10:30:16+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18109824736964190",
+      "url": "https://www.instagram.com/p/Dft_sWdjg_q/",
+      "at": "2026-11-14T10:30:25+00:00",
+      "error": null
+    }
   }
 }
