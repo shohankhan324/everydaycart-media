@@ -2050,5 +2050,21 @@
       "at": "2026-11-14T12:31:01+00:00",
       "error": null
     }
+  },
+  "2026-11-14-forkan-trolley-luggage": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144574315382754",
+      "url": "https://www.facebook.com/1155560334313168_122144574315382754",
+      "at": "2026-11-14T14:00:21+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17916818682514035",
+      "url": "https://www.instagram.com/p/DfuXu9Fl3v_/",
+      "at": "2026-11-14T14:00:35+00:00",
+      "error": null
+    }
   }
 }
