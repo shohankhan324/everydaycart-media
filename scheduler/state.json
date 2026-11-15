@@ -2130,5 +2130,21 @@
       "at": "2026-11-15T10:30:37+00:00",
       "error": null
     }
+  },
+  "2026-11-15-reel-teddy-guess-price": {
+    "facebook": {
+      "status": "published",
+      "id": "3569853773184459",
+      "url": "https://www.facebook.com/reel/3569853773184459",
+      "at": "2026-11-15T12:30:27+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18047235767836227",
+      "url": "https://www.instagram.com/reel/DfwyPuEhenD/",
+      "at": "2026-11-15T12:30:59+00:00",
+      "error": null
+    }
   }
 }
