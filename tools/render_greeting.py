@@ -88,18 +88,22 @@ def dipaboli(out):
 def r10(x): return int(round(x / 10.0)) * 10
 
 
-def offer_teaser(out, items, pct, code, dates):
-    """11.11 offer announcement card: big flat 11.11, % off, coupon chip, product strip."""
+def offer_teaser(out, items, pct, code, dates, big="11.11", big_size=230, big_y=150, sub="SHOPPING FESTIVAL",
+                 head=SAGE, tag="MEGA SALE"):
+    """Offer announcement card: big flat headline, % off, coupon chip, product strip."""
     img = Image.new("RGBA", (W, H), CREAM + (255,)); d = ImageDraw.Draw(img)
-    d.rectangle(P(0, 0, W0, 760), fill=SAGE)
+    d.rectangle(P(0, 0, W0, 760), fill=head)
     for (x, y, r) in [(110, 190, 14), (960, 170, 12), (180, 620, 9), (930, 600, 10), (80, 420, 7), (1000, 420, 8)]:
         sparkle(d, x, y, r, GOLD_L)
     lg = load_logo(190)
     d.rounded_rectangle(P(36, 32, 36 + lg.width / S + 24, 32 + lg.height / S + 20), radius=16 * S, fill=(255, 255, 255))
     img.alpha_composite(lg, (48 * S, 42 * S)); d = ImageDraw.Draw(img)
-    rf.tag_pill(d, W0 - 48, 48, "MEGA SALE", ROSE, "white")
-    centered(d, 150, "11.11", "Poppins-Bold.ttf", 230, 900, "white")
-    centered(d, 440, "SHOPPING FESTIVAL", "Poppins-Medium.ttf", 40, 900, SAGE_L)
+    rf.tag_pill(d, W0 - 48, 48, tag, ROSE, "white")
+    if isinstance(big, str): big = [big]
+    yy = big_y
+    for line in big:
+        centered(d, yy, line, "Poppins-Bold.ttf", big_size, 900, "white"); yy += big_size * 1.12
+    centered(d, 440, sub, "Poppins-Medium.ttf", 40, 900, SAGE_L)
     # discount ribbon
     t = f"Extra {pct}% OFF"; ft = f("Poppins-Bold.ttf", 64); tw = d.textlength(t, font=ft) / S
     d.rounded_rectangle(P(540 - tw / 2 - 44, 520, 540 + tw / 2 + 44, 618), radius=49 * S, fill=ROSE)
@@ -127,8 +131,8 @@ def offer_teaser(out, items, pct, code, dates):
     return rf.finish(img, out)
 
 
-def offer_grid(out, items, pct, code, dates):
-    p = dict(out=out, tag="11.11 SALE", title=f"11.11 Deals: Extra {pct}% OFF", sub=f"Code {code}  •  {dates}",
+def offer_grid(out, items, pct, code, dates, tag="11.11 SALE", title=None, word="Extra "):
+    p = dict(out=out, tag=tag, title=title or f"11.11 Deals: {word}{pct}% OFF", sub=f"Code {code}  •  {dates}",
              items=[dict(img=it["img"], name=it["name"], price=r10(it["price"] * (100 - pct) / 100), regular=it["price"],
                          accent=it.get("accent", (238, 243, 235))) for it in items],
              foot=f"Use code {code}  •  Inbox us to order")
@@ -143,6 +147,20 @@ def offer_11_11():
              dict(img=im(FL + "hgt_tumbler.png"), name="Have Good Time Tumbler", short="HGT Tumbler", price=1000, accent=(246, 228, 230))]
     offer_teaser("01_11_11_teaser", items, 11, "EC1111", "10 to 12 November")
     offer_grid("02_11_11_deals", items, 11, "EC1111", "10 to 12 Nov")
+
+
+def offer_black_friday():
+    """Black Friday 2026 (Fri 27 Nov) offer draft: flat 15% off, code ECBF15, 27 to 30 Nov."""
+    HQ = rf.HQ; im = rf.im
+    items = [dict(img=im(HQ + "09.png"), name="COLMI P81 Calling Smartwatch", short="COLMI P81", price=1350, accent=(232, 238, 229)),
+             dict(img=im(HQ + "14.png"), name="Awei KA5 20W Speaker", short="Awei KA5 Speaker", price=2525, accent=(250, 238, 205)),
+             dict(img=im(HQ + "15.png"), name="Big Mac Thermos Cup", short="Big Mac Cup", price=1000, accent=(226, 236, 244)),
+             dict(img=im(HQ + "06.png"), name="22\" Big Teddy Bear", short="22\" Teddy Bear", price=1150, accent=(246, 228, 230))]
+    BF_HEAD = (52, 68, 50)
+    offer_teaser("01_black_friday_teaser", items, 15, "ECBF15", "27 to 30 November", big=["BLACK", "FRIDAY"], big_size=120,
+                 big_y=135, sub="WEEKEND SALE", head=BF_HEAD, tag="BLACK FRIDAY")
+    offer_grid("02_black_friday_deals", items, 15, "ECBF15", "27 to 30 Nov", tag="BLACK FRIDAY",
+               title="Black Friday: 15% OFF", word="")
 
 
 BD_GREEN = (0, 106, 78); BD_RED = (244, 42, 65)
@@ -196,5 +214,6 @@ if __name__ == "__main__":
     rf.OUTDIR = sys.argv[1] if len(sys.argv) > 1 else rf.OUTDIR
     os.makedirs(rf.OUTDIR, exist_ok=True)
     if len(sys.argv) > 2 and sys.argv[2] == "1111": offer_11_11()
+    elif len(sys.argv) > 2 and sys.argv[2] == "bf": offer_black_friday()
     elif len(sys.argv) > 2 and sys.argv[2] == "afd": armed_forces_day("2026-11-21-armed-forces-day")
-    else: print("usage: render_greeting.py OUTDIR 1111|afd")
+    else: print("usage: render_greeting.py OUTDIR 1111|bf|afd")
