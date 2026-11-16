@@ -2210,5 +2210,21 @@
       "at": "2026-11-16T07:30:43+00:00",
       "error": null
     }
+  },
+  "2026-11-16-winter-flask-duo": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122144949519382754",
+      "url": "https://www.facebook.com/1155560334313168_122144949519382754",
+      "at": "2026-11-16T10:30:25+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18139721894507648",
+      "url": "https://www.instagram.com/p/DfzJTQTl14i/",
+      "at": "2026-11-16T10:30:39+00:00",
+      "error": null
+    }
   }
 }
