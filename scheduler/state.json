@@ -2226,5 +2226,21 @@
       "at": "2026-11-16T10:30:39+00:00",
       "error": null
     }
+  },
+  "2026-11-16-reel-massage-gun-long-day": {
+    "facebook": {
+      "status": "published",
+      "id": "1119107917392223",
+      "url": "https://www.facebook.com/reel/1119107917392223",
+      "at": "2026-11-16T12:30:28+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18118170854170668",
+      "url": "https://www.instagram.com/reel/DfzXCrWB6jA/",
+      "at": "2026-11-16T12:31:04+00:00",
+      "error": null
+    }
   }
 }
