@@ -2354,5 +2354,21 @@
       "at": "2026-11-17T14:00:28+00:00",
       "error": null
     }
+  },
+  "2026-11-17-kodomo-lotion-powder": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145171177382754",
+      "url": "https://www.facebook.com/1155560334313168_122145171177382754",
+      "at": "2026-11-17T15:30:28+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18036956363884163",
+      "url": "https://www.instagram.com/p/Df2QbqYl_0V/",
+      "at": "2026-11-17T15:30:42+00:00",
+      "error": null
+    }
   }
 }
