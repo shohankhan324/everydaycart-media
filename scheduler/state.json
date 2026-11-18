@@ -2450,5 +2450,21 @@
       "at": "2026-11-18T14:01:00+00:00",
       "error": null
     }
+  },
+  "2026-11-18-portable-bbq-grill": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145349533382754",
+      "url": "https://www.facebook.com/1155560334313168_122145349533382754",
+      "at": "2026-11-18T15:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18115460036141634",
+      "url": "https://www.instagram.com/p/Df41OGpGnJw/",
+      "at": "2026-11-18T15:30:39+00:00",
+      "error": null
+    }
   }
 }
