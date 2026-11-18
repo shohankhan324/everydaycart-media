@@ -2418,5 +2418,21 @@
       "at": "2026-11-18T10:30:30+00:00",
       "error": null
     }
+  },
+  "2026-11-18-reel-awei-ka5-rooftop-volume": {
+    "facebook": {
+      "status": "published",
+      "id": "1100027636192282",
+      "url": "https://www.facebook.com/reel/1100027636192282",
+      "at": "2026-11-18T12:30:33+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17985599256156308",
+      "url": "https://www.instagram.com/reel/Df4gpJwTj7u/",
+      "at": "2026-11-18T12:31:09+00:00",
+      "error": null
+    }
   }
 }
