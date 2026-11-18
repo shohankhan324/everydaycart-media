@@ -2434,5 +2434,21 @@
       "at": "2026-11-18T12:31:09+00:00",
       "error": null
     }
+  },
+  "2026-11-18-elephant-plush-soft-toy": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145332967382754",
+      "url": "https://www.facebook.com/1155560334313168_122145332967382754",
+      "at": "2026-11-18T14:00:44+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18131877832874968",
+      "url": "https://www.instagram.com/p/Df4q9Wsk22O/",
+      "at": "2026-11-18T14:01:00+00:00",
+      "error": null
+    }
   }
 }
