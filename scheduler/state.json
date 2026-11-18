@@ -2370,5 +2370,21 @@
       "at": "2026-11-17T15:30:42+00:00",
       "error": null
     }
+  },
+  "2026-11-18-oraimo-spacebuds-neo-plus": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145267201382754",
+      "url": "https://www.facebook.com/1155560334313168_122145267201382754",
+      "at": "2026-11-18T05:30:22+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17917903611517226",
+      "url": "https://www.instagram.com/p/Df3wjRJjXFS/",
+      "at": "2026-11-18T05:30:37+00:00",
+      "error": null
+    }
   }
 }
