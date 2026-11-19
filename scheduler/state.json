@@ -2482,5 +2482,21 @@
       "at": "2026-11-19T05:30:34+00:00",
       "error": null
     }
+  },
+  "2026-11-19-mumpot-kodomo-baby-picks": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145459177382754",
+      "url": "https://www.facebook.com/1155560334313168_122145459177382754",
+      "at": "2026-11-19T07:30:31+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18426538813152710",
+      "url": "https://www.instagram.com/p/Df6jGJxEwvs/",
+      "at": "2026-11-19T07:30:46+00:00",
+      "error": null
+    }
   }
 }
