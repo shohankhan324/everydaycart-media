@@ -2562,5 +2562,21 @@
       "at": "2026-11-19T15:30:39+00:00",
       "error": null
     }
+  },
+  "2026-11-20-oraimo-watch-5-lite-calling": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145680637382754",
+      "url": "https://www.facebook.com/1155560334313168_122145680637382754",
+      "at": "2026-11-20T05:30:23+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18113485055461331",
+      "url": "https://www.instagram.com/p/Df86JJhJeuI/",
+      "at": "2026-11-20T05:30:33+00:00",
+      "error": null
+    }
   }
 }
