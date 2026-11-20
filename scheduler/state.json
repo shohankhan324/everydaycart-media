@@ -2594,5 +2594,21 @@
       "at": "2026-11-20T07:30:31+00:00",
       "error": null
     }
+  },
+  "2026-11-20-winter-tea-flask-pair": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145715161382754",
+      "url": "https://www.facebook.com/1155560334313168_122145715161382754",
+      "at": "2026-11-20T10:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17957726439282546",
+      "url": "https://www.instagram.com/p/Df9cehhF0pY/",
+      "at": "2026-11-20T10:30:31+00:00",
+      "error": null
+    }
   }
 }
