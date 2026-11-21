@@ -2738,5 +2738,21 @@
       "at": "2026-11-21T12:31:48+00:00",
       "error": null
     }
+  },
+  "2026-11-21-auto-folding-umbrella-sun-rain": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145938565382754",
+      "url": "https://www.facebook.com/1155560334313168_122145938565382754",
+      "at": "2026-11-21T14:00:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18119824067324605",
+      "url": "https://www.instagram.com/p/DgAZTgql2qL/",
+      "at": "2026-11-21T14:00:36+00:00",
+      "error": null
+    }
   }
 }
