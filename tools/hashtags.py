@@ -42,6 +42,7 @@ CAT = {
     "clock":      (["#HomeEssentialsBD", "#HomeDecorBD"], ["#AlarmClock", "#HomeDecor", "#BedroomDecor", "#TableClock"]),
     "bbq":        (["#WinterEssentialsBD", "#HomeEssentialsBD"], ["#BBQGrill", "#BBQ", "#RooftopBBQ", "#Picnic"]),
     "massage":    (["#GadgetBD", "#HealthGadgetBD"], ["#MassageGun", "#Fitness", "#GymLife"]),
+    "umbrella":   (["#HomeEssentialsBD", "#WinterEssentialsBD"], ["#Umbrella", "#AutoUmbrella", "#FoldingUmbrella", "#TravelUmbrella"]),
 }
 
 BRANDS = {"oraimo": "#Oraimo", "awei": "#Awei", "proove": "#Proove", "colmi": "#Colmi",
