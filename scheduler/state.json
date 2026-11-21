@@ -2658,5 +2658,21 @@
       "at": "2026-11-20T15:30:37+00:00",
       "error": null
     }
+  },
+  "2026-11-21-armed-forces-day": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122145842253382754",
+      "url": "https://www.facebook.com/1155560334313168_122145842253382754",
+      "at": "2026-11-21T03:00:29+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17913606711595961",
+      "url": "https://www.instagram.com/p/Df_NyIhFyxJ/",
+      "at": "2026-11-21T03:00:41+00:00",
+      "error": null
+    }
   }
 }
