@@ -1,6 +1,6 @@
 # Black Friday weekend offer (DRAFT, not queued)
 
-Status: WAITING FOR OWNER APPROVAL (prepared 15 Nov 2026). Do not queue until approved and the coupon exists on the website.
+Status: WAITING FOR OWNER APPROVAL (prepared 15 Nov 2026; prices and stock rechecked 22 Nov 2026 against the 18 Nov product sync: all 4 in stock, prices unchanged). Do not queue until approved and the coupon exists on the website.
 
 Black Friday 2026 is Friday 27 November. The sale runs Friday to Monday so it also covers Cyber Monday (30 Nov).
 
