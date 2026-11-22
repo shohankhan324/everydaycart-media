@@ -2850,5 +2850,21 @@
       "at": "2026-11-22T14:00:40+00:00",
       "error": null
     }
+  },
+  "2026-11-22-awei-ka5-speaker-picnic-playlist": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122146153137382754",
+      "url": "https://www.facebook.com/1155560334313168_122146153137382754",
+      "at": "2026-11-22T15:30:32+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18093557216502648",
+      "url": "https://www.instagram.com/p/DgDIamJEhru/",
+      "at": "2026-11-22T15:30:42+00:00",
+      "error": null
+    }
   }
 }
