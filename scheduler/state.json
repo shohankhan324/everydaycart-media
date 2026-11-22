@@ -2802,5 +2802,21 @@
       "at": "2026-11-22T07:30:38+00:00",
       "error": null
     }
+  },
+  "2026-11-22-winter-tumblers-1000-each": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122146102155382754",
+      "url": "https://www.facebook.com/1155560334313168_122146102155382754",
+      "at": "2026-11-22T10:30:24+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17902410126674201",
+      "url": "https://www.instagram.com/p/DgCmET9jGc5/",
+      "at": "2026-11-22T10:30:32+00:00",
+      "error": null
+    }
   }
 }
