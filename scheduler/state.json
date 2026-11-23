@@ -2914,5 +2914,21 @@
       "at": "2026-11-23T10:30:36+00:00",
       "error": null
     }
+  },
+  "2026-11-23-reel-proove-intro-pro-traffic-clear-calls": {
+    "facebook": {
+      "status": "published",
+      "id": "1196414893056194",
+      "url": "https://www.facebook.com/reel/1196414893056194",
+      "at": "2026-11-23T12:30:28+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "17956637982272455",
+      "url": "https://www.instagram.com/reel/DgFYm7PMBg4/",
+      "at": "2026-11-23T12:31:06+00:00",
+      "error": null
+    }
   }
 }
