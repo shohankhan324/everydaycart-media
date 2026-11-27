@@ -3298,5 +3298,21 @@
       "at": "2026-11-27T12:31:12+00:00",
       "error": null
     }
+  },
+  "2026-11-27-insulated-lunch-box-hot-office-lunch": {
+    "facebook": {
+      "status": "published",
+      "id": "1155560334313168_122147098257382754",
+      "url": "https://www.facebook.com/1155560334313168_122147098257382754",
+      "at": "2026-11-27T14:00:30+00:00",
+      "error": null
+    },
+    "instagram": {
+      "status": "published",
+      "id": "18015814058994662",
+      "url": "https://www.instagram.com/p/DgP2FgVkjcD/",
+      "at": "2026-11-27T14:00:39+00:00",
+      "error": null
+    }
   }
 }
